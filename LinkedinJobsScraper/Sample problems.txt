@@ -1,0 +1,72 @@
+Problem 1:
+Create a class ModuleRecord, which stores a subject, credits, level and component breakdown, a dictionary of weights for each module component, all passed as parameters to the constructor, as well as component marks, a dictionary of grades for the components (e.g. CA, Project, Exam)
+Create a method addGrade, which adds a grade for a module component
+
+Create a method getModuleGrade, which returns the overall grade for the module
+
+40
+
+Create a class Transcript, to store multiple ModuleRecords for a student, whose name should be passed to the constructor, DegreeName, level and numCredits, also constructor parameters. 
+
+It should have a method addRecord, taking a ModuleRecord
+
+and 
+
+getOverallGrade, returning the total grade for the student, if modules reflecting the number of credits required have been passed (>40)
+
+30
+
+Ensure and test:
+
+Grades for components and modules must be between 0-100 - it should not be possible to enter a grade outside this range, or to construct a module with sum(weights) !=1
+Adding a component grade where one already exists cannot result in getModuleGrade returning a mark >40
+GetOverallGrade cannot return a passing grade where the number of passing credits is below the required credits
+
+3*10 Marks
+
+
+
+unittest.main(argv=['ignored'], exit=False)
+
+Problem 2:
+Create a class ExamResult, which stores a subject, grade and level, passed as parameters to the constructor.
+Create a method getPoints , which takes a dictionary rubrics mapping level to a list of pairs of numbers. The numbers are in descending order, with the first number representing the minimum grade for the band, and the second representing the points awarded for the grade band. 
+
+30
+
+exampleRubric={
+'H':[[90,100],[80,88],[70,77],[60,66],[50,56],[40,46]],
+'O':[[90,60],[80,48],[80,37],[70,26]]}
+
+e=ExamResult('Maths',82,'H')
+
+e.getPoints(exampleRubric) # will return 88
+
+exampleRubric2={
+'H':[[90,100],[85,90],[80,85],[75,80],[70,75],[65,70],[50,56],[40,46]],
+'O':[[90,60],[80,48],[80,37],[70,26]]}
+
+e.getPoints(exampleRubric2) # will return 85
+
+Create a class LCResult, to store multiple ExamResults for a student, whose name should be passed to the constructor. 
+
+It should have a method addResult, taking an ExamResult
+
+and 
+
+getPoints, returning thesum of points for the best 6 subjects based on the rubrics passed.
+
+30
+
+Ensure and test:
+
+Grades must be between 0-100
+Adding a result cannot result in the reduction of overall points
+Duplicate grades cannot be counted, even for different levels
+Invalid input results in appropriate errors
+
+4*10 Marks
+
+
+
+unittest.main(argv=['ignored'], exit=False)
