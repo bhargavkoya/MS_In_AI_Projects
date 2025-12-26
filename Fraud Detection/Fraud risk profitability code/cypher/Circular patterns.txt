@@ -1,0 +1,2 @@
+MATCH (a:Customer)-[:SENT]->(b:Customer)-[:SENT]->(c:Customer)-[:SENT]->(a)
+RETURN count(*) AS triangles;

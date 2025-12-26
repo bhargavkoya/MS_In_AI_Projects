@@ -1,0 +1,19 @@
+// Aggregates per customer (outgoing)
+MATCH (c:Customer)-[r:SENT]->()
+WITH c,
+     count(r) AS num_sent,
+     sum(r.amount) AS total_sent,
+     avg(r.amount) AS avg_sent
+SET c.num_sent_transactions = num_sent,
+    c.total_sent_amount = coalesce(total_sent, 0),
+    c.avg_sent_amount = coalesce(avg_sent, 0);
+
+// Aggregates per customer (incoming)
+MATCH (c:Customer)<-[r:SENT]-()
+WITH c,
+     count(r) AS num_received,
+     sum(r.amount) AS total_received,
+     avg(r.amount) AS avg_received
+SET c.num_received_transactions = num_received,
+    c.total_received_amount = coalesce(total_received, 0),
+    c.avg_received_amount = coalesce(avg_received, 0);

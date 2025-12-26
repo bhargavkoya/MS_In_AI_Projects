@@ -1,0 +1,24 @@
+//
+//create Graph Projection for directed relationships (used same projection for all the calculations)
+//
+MATCH (source:Family)-[r:MARRIED_TO]->(target:Family)
+RETURN gds.graph.project(
+  'florentine-families',
+  target,
+  source 
+)
+//
+
+//calculate betweenness centrality 
+//
+CALL gds.betweenness.write('florentine-families', { writeProperty: 'betweenness_centrality' })
+YIELD centralityDistribution, nodePropertiesWritten
+RETURN centralityDistribution.min AS minimumScore, 
+       centralityDistribution.mean AS meanScore, 
+       centralityDistribution.max AS maximumScore,
+       nodePropertiesWritten
+//
+
+CALL gds.graph.drop('florentine-families')
+YIELD graphName;
+//

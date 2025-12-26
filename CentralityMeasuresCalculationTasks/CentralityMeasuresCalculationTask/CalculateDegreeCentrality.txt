@@ -1,0 +1,35 @@
+//create graph projection and view summary of results using YIELD
+CALL gds.graph.project('florentine-families', 'Family', 'MARRIED_TO')
+YIELD
+  graphName, nodeCount, relationshipCount
+RETURN
+  graphName, nodeCount, relationshipCount;
+
+//calculate in-degree centrality and return statistics
+CALL gds.degree.write('florentine-families', { writeProperty: 'degree_centrality' })
+YIELD centralityDistribution, nodePropertiesWritten
+RETURN
+  centralityDistribution.min AS minimumScore, 
+  centralityDistribution.mean AS meanScore, 
+  centralityDistribution.max AS maximumScore,
+  nodePropertiesWritten;
+
+
+//view results for all families
+MATCH (f:Family)
+RETURN f.name AS Family, 
+       f.degree_centrality AS DegreeCentrality
+ORDER BY f.degree_centrality DESC
+//
+
+
+//show MEDICI's degree centrality specifically
+MATCH (medici:Family {familyId: 'MEDICI'})
+RETURN medici.name AS Family,
+       medici.degree_centrality AS DegreeCentrality,
+       'MEDICI has the highest degree centrality' AS Analysis
+//
+
+//dropping family graph projection
+CALL gds.graph.drop('florentine-families')
+YIELD graphName;

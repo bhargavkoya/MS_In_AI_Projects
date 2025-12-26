@@ -1,0 +1,70 @@
+//create all marriage relationships between families
+MATCH (medici:Family {familyId: 'MEDICI'})
+MATCH (salviati:Family {familyId: 'SALVIATI'})
+MATCH (albizzi:Family {familyId: 'ALBIZZI'})
+MATCH (tornabuon:Family {familyId: 'TORNABUON'})
+MATCH (ginori:Family {familyId: 'GINORI'})
+MATCH (barbadori:Family {familyId: 'BARBADORI'})
+MATCH (castellan:Family {familyId: 'CASTELLAN'})
+MATCH (peruzzi:Family {familyId: 'PERUZZI'})
+MATCH (strozzi:Family {familyId: 'STROZZI'})
+MATCH (ridolfi:Family {familyId: 'RIDOLFI'})
+MATCH (bischeri:Family {familyId: 'BISCHERI'})
+MATCH (guadagni:Family {familyId: 'GUADAGNI'})
+MATCH (lambertes:Family {familyId: 'LAMBERTES'})
+MATCH (acciajuol:Family {familyId: 'ACCIAJUOL'})
+MATCH (pazzi:Family {familyId: 'PAZZI'})
+
+//create all 40 marriage relationships
+CREATE 
+  //MEDICI's 6 marriage connections
+  (medici)-[:MARRIED_TO {type: 'marriage', era: 'Renaissance'}]->(albizzi),
+  (medici)-[:MARRIED_TO {type: 'marriage', era: 'Renaissance'}]->(barbadori),
+  (medici)-[:MARRIED_TO {type: 'marriage', era: 'Renaissance'}]->(ridolfi),
+  (medici)-[:MARRIED_TO {type: 'marriage', era: 'Renaissance'}]->(tornabuon),
+  (medici)-[:MARRIED_TO {type: 'marriage', era: 'Renaissance'}]->(salviati),
+  (medici)-[:MARRIED_TO {type: 'marriage', era: 'Renaissance'}]->(acciajuol),
+  
+  //secondary tier family connections
+  (albizzi)-[:MARRIED_TO {type: 'marriage', era: 'Renaissance'}]->(ginori),
+  (albizzi)-[:MARRIED_TO {type: 'marriage', era: 'Renaissance'}]->(guadagni),
+  (albizzi)-[:MARRIED_TO {type: 'marriage', era: 'Renaissance'}]->(medici),
+  (barbadori)-[:MARRIED_TO {type: 'marriage', era: 'Renaissance'}]->(castellan),
+  (barbadori)-[:MARRIED_TO {type: 'marriage', era: 'Renaissance'}]->(medici),
+  (castellan)-[:MARRIED_TO {type: 'marriage', era: 'Renaissance'}]->(peruzzi),
+  (castellan)-[:MARRIED_TO {type: 'marriage', era: 'Renaissance'}]->(strozzi),
+  (castellan)-[:MARRIED_TO {type: 'marriage', era: 'Renaissance'}]->(barbadori),
+  (peruzzi)-[:MARRIED_TO {type: 'marriage', era: 'Renaissance'}]->(strozzi),
+  (peruzzi)-[:MARRIED_TO {type: 'marriage', era: 'Renaissance'}]->(bischeri),
+  (peruzzi)-[:MARRIED_TO {type: 'marriage', era: 'Renaissance'}]->(castellan),
+  (ridolfi)-[:MARRIED_TO {type: 'marriage', era: 'Renaissance'}]->(strozzi),
+  (ridolfi)-[:MARRIED_TO {type: 'marriage', era: 'Renaissance'}]->(tornabuon),
+  (ridolfi)-[:MARRIED_TO {type: 'marriage', era: 'Renaissance'}]->(medici),
+  (tornabuon)-[:MARRIED_TO {type: 'marriage', era: 'Renaissance'}]->(guadagni),
+  (tornabuon)-[:MARRIED_TO {type: 'marriage', era: 'Renaissance'}]->(ridolfi),
+  (tornabuon)-[:MARRIED_TO {type: 'marriage', era: 'Renaissance'}]->(medici),
+  (guadagni)-[:MARRIED_TO {type: 'marriage', era: 'Renaissance'}]->(bischeri),
+  (guadagni)-[:MARRIED_TO {type: 'marriage', era: 'Renaissance'}]->(lambertes),
+  (guadagni)-[:MARRIED_TO {type: 'marriage', era: 'Renaissance'}]->(tornabuon),
+  (guadagni)-[:MARRIED_TO {type: 'marriage', era: 'Renaissance'}]->(albizzi),
+  (bischeri)-[:MARRIED_TO {type: 'marriage', era: 'Renaissance'}]->(peruzzi),
+  (bischeri)-[:MARRIED_TO {type: 'marriage', era: 'Renaissance'}]->(strozzi),
+  (bischeri)-[:MARRIED_TO {type: 'marriage', era: 'Renaissance'}]->(guadagni),
+  (salviati)-[:MARRIED_TO {type: 'marriage', era: 'Renaissance'}]->(pazzi),
+  (salviati)-[:MARRIED_TO {type: 'marriage', era: 'Renaissance'}]->(medici),
+  (pazzi)-[:MARRIED_TO {type: 'marriage', era: 'Renaissance'}]->(salviati),
+  (acciajuol)-[:MARRIED_TO {type: 'marriage', era: 'Renaissance'}]->(medici),
+  (strozzi)-[:MARRIED_TO {type: 'marriage', era: 'Renaissance'}]->(peruzzi),
+  (strozzi)-[:MARRIED_TO {type: 'marriage', era: 'Renaissance'}]->(castellan),
+  (strozzi)-[:MARRIED_TO {type: 'marriage', era: 'Renaissance'}]->(ridolfi),
+  (strozzi)-[:MARRIED_TO {type: 'marriage', era: 'Renaissance'}]->(bischeri),
+  (lambertes)-[:MARRIED_TO {type: 'marriage', era: 'Renaissance'}]->(guadagni),
+  (ginori)-[:MARRIED_TO {type: 'marriage', era: 'Renaissance'}]->(albizzi)
+
+  
+
+//show MEDICI's direct connections
+MATCH (medici:Family {familyId: 'MEDICI'})-[r:MARRIED_TO]-(connected:Family)
+RETURN medici.name AS CentralFamily, 
+       collect(connected.name) AS DirectConnections,
+       count(connected) AS NumberOfConnections;

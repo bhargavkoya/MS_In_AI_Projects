@@ -1,0 +1,15 @@
+// Betweenness: Identify intermediary/broker customers
+CALL gds.betweenness.write(
+  'customer_transaction_graph',
+  {
+    writeProperty: 'betweenness_score'
+  }
+) YIELD nodePropertiesWritten
+RETURN nodePropertiesWritten;
+
+// Top 10 betweenness customers (brokers/intermediaries)
+MATCH (c:Customer)
+WHERE c.betweenness_score IS NOT NULL
+RETURN c.name, c.account, c.betweenness_score, c.out_degree, c.in_degree
+ORDER BY c.betweenness_score DESC
+LIMIT 10;

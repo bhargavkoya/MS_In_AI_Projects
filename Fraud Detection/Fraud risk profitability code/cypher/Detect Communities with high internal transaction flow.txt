@@ -1,0 +1,21 @@
+// Detect communities (clusters of customers with high internal transaction flow)
+CALL gds.louvain.write(
+  'customer_transaction_graph',
+  {
+    writeProperty: 'community_id',
+    maxLevels: 10
+  }
+) YIELD communityCount, modularity
+RETURN communityCount AS num_communities,
+       modularity AS modularity_score;
+
+// Summarize communities by size and transaction volume
+MATCH (c:Customer)
+WHERE c.community_id IS NOT NULL
+WITH c.community_id AS community,
+     count(c) AS community_size,
+     sum(c.total_sent_amount) AS total_volume,
+     collect(c.name)[0..3] AS sample_members
+RETURN community, community_size, total_volume, sample_members
+ORDER BY community_size DESC
+LIMIT 10;

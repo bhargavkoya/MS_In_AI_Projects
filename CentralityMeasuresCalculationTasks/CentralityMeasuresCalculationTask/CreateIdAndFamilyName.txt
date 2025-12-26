@@ -1,0 +1,7 @@
+//create constraints for data integrity
+CREATE CONSTRAINT family_unique IF NOT EXISTS 
+FOR (f:Family) REQUIRE f.familyId IS UNIQUE;
+
+//create performance indexes
+CREATE INDEX family_name_index IF NOT EXISTS 
+FOR (f:Family) ON (f.name);

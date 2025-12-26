@@ -1,0 +1,23 @@
+//create all 16 Florentine family nodes with properties
+CREATE 
+  (:Family {familyId: 'MEDICI', name: 'Medici', degree: 6, era: 'Renaissance'}),
+  (:Family {familyId: 'SALVIATI', name: 'Salviati', degree: 2, era: 'Renaissance'}),
+  (:Family {familyId: 'ALBIZZI', name: 'Albizzi', degree: 3, era: 'Renaissance'}),
+  (:Family {familyId: 'TORNABUON', name: 'Tornabuon', degree: 3, era: 'Renaissance'}),
+  (:Family {familyId: 'GINORI', name: 'Ginori', degree: 1, era: 'Renaissance'}),
+  (:Family {familyId: 'BARBADORI', name: 'Barbadori', degree: 3, era: 'Renaissance'}),
+  (:Family {familyId: 'CASTELLAN', name: 'Castellan', degree: 3, era: 'Renaissance'}),
+  (:Family {familyId: 'PERUZZI', name: 'Peruzzi', degree: 3, era: 'Renaissance'}),
+  (:Family {familyId: 'STROZZI', name: 'Strozzi', degree: 3, era: 'Renaissance'}),
+  (:Family {familyId: 'RIDOLFI', name: 'Ridolfi', degree: 3, era: 'Renaissance'}),
+  (:Family {familyId: 'BISCHERI', name: 'Bischeri', degree: 3, era: 'Renaissance'}),
+  (:Family {familyId: 'GUADAGNI', name: 'Guadagni', degree: 4, era: 'Renaissance'}),
+  (:Family {familyId: 'LAMBERTES', name: 'Lambertes', degree: 2, era: 'Renaissance'}),
+  (:Family {familyId: 'ACCIAJUOL', name: 'Acciajuol', degree: 1, era: 'Renaissance'}),
+  (:Family {familyId: 'PAZZI', name: 'Pazzi', degree: 2, era: 'Renaissance'}),
+  (:Family {familyId: 'PUCCI', name: 'Pucci', degree: 0, era: 'Renaissance'});
+
+//verify node creation
+MATCH (f:Family) 
+RETURN f.name AS Family, f.degree AS Connections 
+ORDER BY f.degree DESC;

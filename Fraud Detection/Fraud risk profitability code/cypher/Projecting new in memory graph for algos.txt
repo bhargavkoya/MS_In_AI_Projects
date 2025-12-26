@@ -1,0 +1,17 @@
+// Project in-memory graph for algorithms
+CALL gds.graph.project(
+  'customer_transaction_graph',
+  'Customer',
+  'SENT',
+  {
+    relationshipProperties: ['amount'],
+    nodeProperties: ['profitability_score', 'out_degree', 'in_degree']
+  }
+)
+YIELD graphName, nodeCount, relationshipCount;
+
+// Verify
+CALL gds.graph.list()
+YIELD graphName, nodeCount, relationshipCount
+WHERE graphName = 'customer_transaction_graph'
+RETURN graphName, nodeCount, relationshipCount;

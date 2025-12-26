@@ -1,0 +1,16 @@
+// FastRP: Generate 64-dim vector embeddings capturing neighborhood similarity
+CALL gds.fastRP.write(
+  'customer_transaction_graph',
+  {
+    writeProperty: 'embedding',
+    embeddingDimension: 64,
+    iterationWeights: [1.0, 0.5, 0.25],
+    randomSeed: 42
+  }
+) YIELD nodePropertiesWritten
+RETURN nodePropertiesWritten;
+
+// Verify embeddings
+MATCH (c:Customer)
+WHERE c.embedding IS NOT NULL
+RETURN c.name, size(c.embedding) AS embedding_length LIMIT 5;

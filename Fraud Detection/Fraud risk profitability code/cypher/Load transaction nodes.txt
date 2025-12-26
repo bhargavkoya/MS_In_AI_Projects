@@ -1,0 +1,13 @@
+// LOAD CSV WITH HEADERS
+FROM 'https://raw.githubusercontent.com/neo4j-examples/neo4j-fabric-examples/refs/heads/main/synthetic-data/transactions.csv' AS row
+MATCH (from_c:Customer {account: row.fromAccount})
+MATCH (to_c:Customer {account: row.toAccount})
+CREATE (from_c)-[:SENT {
+  amount: toFloat(row.amount),
+  transactionID: row.transactionID,
+  // replace space with 'T' then parse
+  dateTime: datetime(replace(row.dateTime, ' ', 'T')),
+  currency: row.currency
+}]->(to_c);
+
+MATCH ()-[r:SENT]->() RETURN count(r) AS transaction_count;

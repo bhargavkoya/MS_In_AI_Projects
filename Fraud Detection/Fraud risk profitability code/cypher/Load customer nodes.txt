@@ -1,0 +1,17 @@
+// Load Customer nodes
+LOAD CSV WITH HEADERS FROM 'https://raw.githubusercontent.com/neo4j-examples/neo4j-fabric-examples/refs/heads/main/synthetic-data/customers.csv' AS row
+CREATE (:Customer {
+  customerID: row.customerID,
+  name: row.name,
+  email: row.email,
+  phoneNumber: row.phoneNumber,
+  address: row.address,
+  account: row.account,
+  sortCode: row.sortCode
+});
+
+// Create indices
+CREATE INDEX customer_id FOR (c:Customer) ON (c.customerID);
+CREATE INDEX account_num FOR (c:Customer) ON (c.account);
+
+MATCH (c:Customer) RETURN count(c) AS customer_count;

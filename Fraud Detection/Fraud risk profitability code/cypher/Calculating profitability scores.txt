@@ -1,0 +1,10 @@
+// Calculate profitability score (normalized 0–100)
+// Assumption: Fee income 0.5% of sent amount + interest on balance (simulated as total_received * 0.02)
+MATCH (c:Customer)
+WITH max(c.total_sent_amount * 0.005 + c.total_received_amount * 0.02) AS max_profit
+MATCH (c2:Customer)
+SET c2.profitability_score = 
+    CASE WHEN max_profit > 0
+         THEN ((c2.total_sent_amount * 0.005 + c2.total_received_amount * 0.02) / max_profit) * 100
+         ELSE 50
+    END;

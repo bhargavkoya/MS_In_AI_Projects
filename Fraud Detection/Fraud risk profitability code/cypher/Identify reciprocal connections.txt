@@ -1,0 +1,5 @@
+// Identify reciprocal relationships (mutual transactions: A<->B)
+MATCH (c1:Customer)-[:SENT]->(c2:Customer)
+WHERE (c2)-[:SENT]->(c1)
+WITH c1, count(DISTINCT c2) AS reciprocal_count
+SET c1.reciprocal_connections = reciprocal_count;

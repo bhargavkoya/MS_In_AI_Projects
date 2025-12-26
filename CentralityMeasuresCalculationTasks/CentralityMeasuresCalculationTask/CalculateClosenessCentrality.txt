@@ -1,0 +1,31 @@
+//create Graph Projection
+CALL gds.graph.project('florentine-families', 'Family', 'MARRIED_TO')
+YIELD
+  graphName, nodeCount, relationshipCount
+RETURN
+  graphName, nodeCount, relationshipCount;
+//
+
+//calculate Closeness Centrality across subgraph
+//
+CALL gds.closeness.write('florentine-families', { writeProperty: 'closeness_centrality' })
+YIELD centralityDistribution, nodePropertiesWritten
+RETURN centralityDistribution.min AS minimumScore, 
+       centralityDistribution.mean AS meanScore, 
+       centralityDistribution.max AS maximumScore,
+       nodePropertiesWritten
+//
+
+//calculate Harmonic Closeness Centrality across full graph (handles disconnected components)
+//
+CALL gds.closeness.harmonic.write('florentine-families', { writeProperty: 'harmonic_centrality' })
+YIELD centralityDistribution, nodePropertiesWritten
+RETURN centralityDistribution.min AS minimumScore, 
+       centralityDistribution.mean AS meanScore, 
+       centralityDistribution.max AS maximumScore,
+       nodePropertiesWritten
+//
+
+//dropping family graph projection
+CALL gds.graph.drop('florentine-families')
+YIELD graphName;

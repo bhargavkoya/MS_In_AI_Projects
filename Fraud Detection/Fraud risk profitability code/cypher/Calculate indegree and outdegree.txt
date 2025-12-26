@@ -1,0 +1,4 @@
+// Calculate in-degree and out-degree
+MATCH (c:Customer)
+SET c.out_degree = COUNT {(c)-[:SENT]->()},
+    c.in_degree = COUNT {(c)<-[:SENT]-()};

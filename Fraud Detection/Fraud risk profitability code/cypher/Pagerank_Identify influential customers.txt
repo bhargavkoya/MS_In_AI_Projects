@@ -1,0 +1,17 @@
+// PageRank: Identify influential customers (hubs in transaction network)
+CALL gds.pageRank.write(
+  'customer_transaction_graph',
+  {
+    writeProperty: 'pagerank_score',
+    maxIterations: 20,
+    dampingFactor: 0.85
+  }
+) YIELD nodePropertiesWritten
+RETURN nodePropertiesWritten;
+
+// Top 10 PageRank customers (network hubs)
+MATCH (c:Customer)
+WHERE c.pagerank_score IS NOT NULL
+RETURN c.name, c.account, c.pagerank_score, c.total_sent_amount, c.num_sent_transactions
+ORDER BY c.pagerank_score DESC
+LIMIT 10;

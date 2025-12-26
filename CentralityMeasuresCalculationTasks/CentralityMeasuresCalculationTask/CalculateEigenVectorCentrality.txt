@@ -1,0 +1,25 @@
+//create Graph Projection
+CALL gds.graph.project('florentine-families', 'Family', 'MARRIED_TO')
+YIELD
+  graphName, nodeCount, relationshipCount
+RETURN
+  graphName, nodeCount, relationshipCount;
+//
+
+//calculate Eigenvector Centrality
+//
+CALL gds.eigenvector.write('florentine-families', { 
+  writeProperty: 'eigenvector_centrality',
+  maxIterations: 20,
+  tolerance: 0.0001
+})
+YIELD centralityDistribution, nodePropertiesWritten, ranIterations
+RETURN centralityDistribution.min AS minimumScore, 
+       centralityDistribution.mean AS meanScore, 
+       centralityDistribution.max AS maximumScore,
+       nodePropertiesWritten,
+       ranIterations
+//
+
+CALL gds.graph.drop('florentine-families')
+YIELD graphName;
