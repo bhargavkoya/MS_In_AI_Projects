@@ -1,0 +1,271 @@
+[
+  {
+    "question": "What is the submission deadline for the NLP CA2 assignment?",
+    "expected_keywords": ["week 12", "sunday", "23:55", "deadline", "submission"],
+    "category": "NLP \u2013 Submission Policy",
+    "ground_truth": "The NLP CA2 assignment must be submitted by Sunday of Week 12 at 23:55."
+  },
+  {
+    "question": "How many marks is the NLP group presentation worth?",
+    "expected_keywords": ["30", "marks", "presentation", "group", "task 1"],
+    "category": "NLP \u2013 Assessment Details",
+    "ground_truth": "The NLP group presentation (Task 1) is worth 30 marks."
+  },
+  {
+    "question": "What is the percentage weighting of the NLP individual report?",
+    "expected_keywords": ["70", "individual", "report", "task 2", "marks"],
+    "category": "NLP \u2013 Assessment Details",
+    "ground_truth": "The NLP individual report (Task 2) is worth 70 marks."
+  },
+  {
+    "question": "What NLP techniques can be selected for the group project?",
+    "expected_keywords": ["clustering", "topic modelling", "RAG", "chatbot", "fine tuning"],
+    "category": "NLP \u2013 Technical Requirements",
+    "ground_truth": "Groups can choose from techniques including clustering, topic modelling, RAG chatbot development, and fine tuning of language models."
+  },
+  {
+    "question": "What are the consequences of plagiarism at Dublin Business School?",
+    "expected_keywords": ["plagiarism", "penalty", "academic", "misconduct", "ouriginal"],
+    "category": "Academic Integrity",
+    "ground_truth": "Plagiarism is treated as academic misconduct at Dublin Business School. Submissions are checked using Ouriginal, and penalties apply for confirmed cases of plagiarism."
+  },
+  {
+    "question": "What happens if I submit my NLP assignment late?",
+    "expected_keywords": ["2 marks", "per day", "late", "penalty", "14 days"],
+    "category": "NLP \u2013 Late Submission",
+    "ground_truth": "Late submissions are penalised 2 marks per day for up to 14 days after the deadline."
+  },
+  {
+    "question": "Can I use AI tools when writing my NLP assignment?",
+    "expected_keywords": ["AI", "level 2", "brainstorming", "no AI content", "submission"],
+    "category": "NLP \u2013 AI Policy",
+    "ground_truth": "AI tools are permitted at Level 2 for brainstorming and planning only. No AI-generated content may appear directly in the final submission."
+  },
+  {
+    "question": "What file format must be submitted to Moodle for the NLP assignment?",
+    "expected_keywords": ["CA02", "surname", "student-ID", "pdf", "moodle"],
+    "category": "NLP \u2013 Submission Format",
+    "ground_truth": "The submission file must be named CA02_Surname_StudentID and uploaded as a PDF to Moodle."
+  },
+  {
+    "question": "What are the MIMLOs being assessed in NLP CA2?",
+    "expected_keywords": ["MIMLO04", "MIMLO05", "MIMLO06", "learning outcomes"],
+    "category": "NLP \u2013 Learning Outcomes",
+    "ground_truth": "NLP CA2 assesses Module Intended Learning Outcomes MIMLO04, MIMLO05, and MIMLO06."
+  },
+  {
+    "question": "What are the grading criteria for the modelling section in NLP CA2?",
+    "expected_keywords": ["modelling", "criterion", "003", "25%", "libraries"],
+    "category": "NLP \u2013 Grading Criteria",
+    "ground_truth": "The modelling section (criterion 003) is worth 25% and assesses the correct use of NLP libraries and modelling techniques."
+  },
+  {
+    "question": "Who is the lecturer for the NLP module B9AI006?",
+    "expected_keywords": ["lecturer", "NLP", "B9AI006", "module"],
+    "category": "NLP \u2013 Module Info"
+  },
+  {
+    "question": "What are the three sections of the NLP individual report?",
+    "expected_keywords": ["ethics", "bias", "modelling", "critique", "performance", "evaluation"],
+    "category": "NLP \u2013 Report Structure",
+    "ground_truth": "The NLP individual report covers three sections: ethics and bias (AI principles), a critique of modelling techniques and libraries used, and a performance evaluation of results."
+  },
+  {
+    "question": "What happens if the NLP assignment is submitted more than 14 days late?",
+    "expected_keywords": ["0%", "14 days", "zero", "late", "penalty"],
+    "category": "NLP \u2013 Late Submission",
+    "ground_truth": "Submissions received more than 14 days after the deadline are awarded 0%."
+  },
+  {
+    "question": "What programming language and environment is required for the NLP project?",
+    "expected_keywords": ["python", "jupyter", "notebook", "programming", "language"],
+    "category": "NLP \u2013 Technical Requirements",
+    "ground_truth": "The NLP project must be implemented in Python using Jupyter notebooks."
+  },
+  {
+    "question": "What is the maximum group size for NLP CA2?",
+    "expected_keywords": ["group", "students", "maximum", "members", "team"],
+    "category": "NLP \u2013 Group Policy"
+  },
+  {
+    "question": "What is CRISP-DM and what are its main phases?",
+    "expected_keywords": ["CRISP-DM", "business understanding", "data understanding", "modelling", "deployment"],
+    "category": "CRISP-DM Methodology"
+  },
+  {
+    "question": "What datasets are suggested for the NLP CA2 project?",
+    "expected_keywords": ["dataset", "kaggle", "hugging face", "data", "NLP"],
+    "category": "NLP \u2013 Dataset"
+  },
+  {
+    "question": "What is the submission format for the Machine Learning and Pattern Recognition CA2 assignment?",
+    "expected_keywords": ["pdf", "zip", "moodle", "submission", "format"],
+    "category": "ML \u2013 Submission Format"
+  },
+  {
+    "question": "What machine learning algorithms or models are expected in the ML CA2 assignment?",
+    "expected_keywords": ["algorithm", "classification", "model", "supervised", "prediction"],
+    "category": "ML \u2013 Technical Content"
+  },
+  {
+    "question": "How many marks is the Machine Learning CA1 assignment worth?",
+    "expected_keywords": ["marks", "CA1", "machine learning", "assessment", "weighting"],
+    "category": "ML \u2013 Assessment Details"
+  },
+  {
+    "question": "What evaluation metrics are required for the Machine Learning assignment?",
+    "expected_keywords": ["accuracy", "precision", "recall", "F1", "evaluation"],
+    "category": "ML \u2013 Evaluation Metrics"
+  },
+  {
+    "question": "Who is the lecturer for the Machine Learning and Pattern Recognition module B9AI102?",
+    "expected_keywords": ["lecturer", "machine learning", "module", "B9AI102"],
+    "category": "ML \u2013 Module Info"
+  },
+  {
+    "question": "What is the submission deadline for the Machine Learning CA2 assignment?",
+    "expected_keywords": ["deadline", "submission", "CA2", "machine learning", "date"],
+    "category": "ML \u2013 Submission Policy"
+  },
+  {
+    "question": "What dataset is used in the Machine Learning CA2 assignment?",
+    "expected_keywords": ["dataset", "data", "machine learning", "CA2", "features"],
+    "category": "ML \u2013 Dataset"
+  },
+  {
+    "question": "What is the focus of the Graph AI CA1 assessment?",
+    "expected_keywords": ["graph", "AI", "CA1", "assessment", "network"],
+    "category": "Graph AI \u2013 Assessment"
+  },
+  {
+    "question": "Who lectures the Graph and AI module at DBS?",
+    "expected_keywords": ["graph", "AI", "lecturer", "DBS", "module"],
+    "category": "Graph AI \u2013 Module Info"
+  },
+  {
+    "question": "What is the submission deadline for the Graph AI CA2 assignment?",
+    "expected_keywords": ["deadline", "submission", "CA2", "graph", "date"],
+    "category": "Graph AI \u2013 Submission Policy"
+  },
+  {
+    "question": "What algorithms or techniques are expected in the Graph AI module assignments?",
+    "expected_keywords": ["graph", "algorithm", "node", "edge", "network"],
+    "category": "Graph AI \u2013 Technical Content"
+  },
+  {
+    "question": "What are the learning outcomes of the Graph and AI module?",
+    "expected_keywords": ["learning outcomes", "graph", "AI", "module", "skills"],
+    "category": "Graph AI \u2013 Learning Outcomes"
+  },
+  {
+    "question": "What is the topic of the Recommender Systems CA2 assessment?",
+    "expected_keywords": ["recommender", "systems", "CA2", "collaborative", "filtering"],
+    "category": "Recommender Systems \u2013 Assessment"
+  },
+  {
+    "question": "What techniques are covered in the Recommender Systems module B9AI103?",
+    "expected_keywords": ["collaborative filtering", "content-based", "matrix factorisation", "recommender", "rating"],
+    "category": "Recommender Systems \u2013 Technical Content"
+  },
+  {
+    "question": "Who is the lecturer for the Recommender Systems module B9AI103?",
+    "expected_keywords": ["lecturer", "recommender", "B9AI103", "module"],
+    "category": "Recommender Systems \u2013 Module Info"
+  },
+  {
+    "question": "What dataset is used in the Recommender Systems CA1 assignment?",
+    "expected_keywords": ["dataset", "recommender", "CA1", "data", "ratings"],
+    "category": "Recommender Systems \u2013 Dataset"
+  },
+  {
+    "question": "What evaluation metrics are required for the Recommender Systems assignment?",
+    "expected_keywords": ["RMSE", "MAE", "precision", "recall", "evaluation"],
+    "category": "Recommender Systems \u2013 Evaluation"
+  },
+  {
+    "question": "What is the focus of the Deep Learning module B9AI104?",
+    "expected_keywords": ["deep learning", "neural network", "B9AI104", "module", "layers"],
+    "category": "Deep Learning \u2013 Module Info"
+  },
+  {
+    "question": "Who is the lecturer for the Deep Learning module at DBS?",
+    "expected_keywords": ["lecturer", "deep learning", "DBS", "module", "B9AI104"],
+    "category": "Deep Learning \u2013 Module Info"
+  },
+  {
+    "question": "What neural network architectures are covered in the Deep Learning module?",
+    "expected_keywords": ["CNN", "RNN", "LSTM", "neural network", "architecture"],
+    "category": "Deep Learning \u2013 Technical Content"
+  },
+  {
+    "question": "What assessment components make up the Deep Learning module grade?",
+    "expected_keywords": ["assessment", "CA1", "CA2", "deep learning", "marks"],
+    "category": "Deep Learning \u2013 Assessment"
+  },
+  {
+    "question": "What programming frameworks are used in the Deep Learning assignments?",
+    "expected_keywords": ["TensorFlow", "Keras", "PyTorch", "deep learning", "framework"],
+    "category": "Deep Learning \u2013 Technical Content"
+  },
+  {
+    "question": "What is the focus of the Reinforcement Learning CA1 assessment?",
+    "expected_keywords": ["reinforcement learning", "CA1", "agent", "reward", "policy"],
+    "category": "Reinforcement Learning \u2013 Assessment"
+  },
+  {
+    "question": "Who is the lecturer for the Reinforcement Learning module B9AI105?",
+    "expected_keywords": ["lecturer", "reinforcement learning", "B9AI105", "module"],
+    "category": "Reinforcement Learning \u2013 Module Info"
+  },
+  {
+    "question": "What algorithms are covered in the Reinforcement Learning module?",
+    "expected_keywords": ["Q-learning", "policy", "reward", "agent", "environment"],
+    "category": "Reinforcement Learning \u2013 Technical Content"
+  },
+  {
+    "question": "What is the submission format for the Programming for Data Analysis CA2?",
+    "expected_keywords": ["submission", "format", "CA2", "data analysis", "pdf"],
+    "category": "Programming \u2013 Submission"
+  },
+  {
+    "question": "What is the weighting of the Programming for Data Analysis CA2 assignment?",
+    "expected_keywords": ["weighting", "marks", "CA2", "data analysis", "assessment"],
+    "category": "Programming \u2013 Assessment Details"
+  },
+  {
+    "question": "What are the DBS exam regulations regarding academic misconduct?",
+    "expected_keywords": ["academic misconduct", "exam", "regulations", "DBS", "penalty"],
+    "category": "DBS Regulations"
+  },
+  {
+    "question": "What is the DBS policy on late submission of coursework?",
+    "expected_keywords": ["late submission", "penalty", "marks", "DBS", "coursework"],
+    "category": "DBS Regulations"
+  },
+  {
+    "question": "What are the DBS grading bands and their percentage ranges?",
+    "expected_keywords": ["distinction", "merit", "pass", "fail", "percentage"],
+    "category": "DBS Regulations"
+  },
+  {
+    "question": "What is the required referencing style for DBS MSc assignments?",
+    "expected_keywords": ["referencing", "Harvard", "APA", "citation", "bibliography"],
+    "category": "Academic Writing"
+  },
+  {
+    "question": "What sections must be included in the NLP CA2 individual report?",
+    "expected_keywords": ["introduction", "methodology", "results", "conclusion", "references"],
+    "category": "NLP \u2013 Report Requirements"
+  },
+  {
+    "question": "What criteria determine the pass mark for MSc modules at Dublin Business School?",
+    "expected_keywords": ["pass mark", "40", "50", "MSc", "modules"],
+    "category": "DBS Regulations"
+  },
+  {
+    "question": "What is the word count requirement for the NLP CA2 individual report?",
+    "expected_keywords": ["3000", "words", "report", "individual", "word count"],
+    "category": "NLP \u2013 Report Requirements",
+    "ground_truth": "The NLP CA2 individual report has a word count requirement of approximately 3000 words."
+  }
+]

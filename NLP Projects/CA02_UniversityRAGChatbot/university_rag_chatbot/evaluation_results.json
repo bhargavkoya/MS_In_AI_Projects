@@ -1,0 +1,874 @@
+{
+  "metadata": {
+    "timestamp": "2026-04-02T13:36:25.794187",
+    "total_questions": 51,
+    "avg_rag_keyword_score": 0.6029411764705882,
+    "avg_rag_response_time": 1.3465955911898146,
+    "source_citation_rate": 1.0
+  },
+  "results": [
+    {
+      "question": "What is the submission deadline for the NLP CA2 assignment?",
+      "category": "NLP – Submission Policy",
+      "expected_keywords": [
+        "week 12",
+        "sunday",
+        "23:55",
+        "deadline",
+        "submission"
+      ],
+      "rag_answer": "I could not find the submission deadline for the NLP CA2 assignment in the provided university documents. The context only contains information about general requirements for student assignments, such as late submission penalties, but does not specify the deadline for the NLP CA2 assignment.",
+      "rag_keyword_score": 0.4,
+      "rag_response_time": 1.414912223815918,
+      "rag_source_count": 3,
+      "rag_has_source": true,
+      "rag_word_count": 44
+    },
+    {
+      "question": "How many marks is the NLP group presentation worth?",
+      "category": "NLP – Assessment Details",
+      "expected_keywords": [
+        "30",
+        "marks",
+        "presentation",
+        "group",
+        "task 1"
+      ],
+      "rag_answer": "I could not find information about the marks allocated for the NLP group presentation in the provided university documents.",
+      "rag_keyword_score": 0.6,
+      "rag_response_time": 0.8108835220336914,
+      "rag_source_count": 3,
+      "rag_has_source": true,
+      "rag_word_count": 19
+    },
+    {
+      "question": "What is the percentage weighting of the NLP individual report?",
+      "category": "NLP – Assessment Details",
+      "expected_keywords": [
+        "70",
+        "individual",
+        "report",
+        "task 2",
+        "marks"
+      ],
+      "rag_answer": "According to the information provided in the \"MSc AI NLP CA 2 Assessment.pdf\" document, the percentage weighting for the NLP individual report is 50%.",
+      "rag_keyword_score": 0.4,
+      "rag_response_time": 1.0539472103118896,
+      "rag_source_count": 3,
+      "rag_has_source": true,
+      "rag_word_count": 24
+    },
+    {
+      "question": "What NLP techniques can be selected for the group project?",
+      "category": "NLP – Technical Requirements",
+      "expected_keywords": [
+        "clustering",
+        "topic modelling",
+        "RAG",
+        "chatbot",
+        "fine tuning"
+      ],
+      "rag_answer": "I could not find any information in the provided university documents about specific NLP techniques that can be selected for the group project. The documents discuss general requirements for the project, such as presenting the design, implementation, evaluation, and Generative AI analysis, as well as the structure of the group report. However, they do not mention any details about the selection of NLP techniques for the project. The documents focus more on the overall project deliverables and assessment criteria rather than the technical details of the NLP approaches to be used.",
+      "rag_keyword_score": 0.0,
+      "rag_response_time": 1.53513503074646,
+      "rag_source_count": 3,
+      "rag_has_source": true,
+      "rag_word_count": 91
+    },
+    {
+      "question": "What are the consequences of plagiarism at Dublin Business School?",
+      "category": "Academic Integrity",
+      "expected_keywords": [
+        "plagiarism",
+        "penalty",
+        "academic",
+        "misconduct",
+        "ouriginal"
+      ],
+      "rag_answer": "According to the information provided in the context, Dublin Business School penalises students who engage in academic impropriety, which includes plagiarism. The context states:\n\n\"Dublin Business School penalises students who engage in academic impropriety (i.e. plagiarism, collusion and/or copying, ghost writing/ essay mills, improper use of Generative Artificial Intelligence software).\"\n\nHowever, the specific consequences of plagiarism are not explicitly stated in the provided documents. The context does not contain information about the exact penalties or disciplinary actions taken by the university for plagiarism.",
+      "rag_keyword_score": 0.4,
+      "rag_response_time": 1.5670745372772217,
+      "rag_source_count": 3,
+      "rag_has_source": true,
+      "rag_word_count": 83
+    },
+    {
+      "question": "What happens if I submit my NLP assignment late?",
+      "category": "NLP – Late Submission",
+      "expected_keywords": [
+        "2 marks",
+        "per day",
+        "late",
+        "penalty",
+        "14 days"
+      ],
+      "rag_answer": "According to the university documents provided:\n\na. If the assignment is submitted late, there will be a 40% penalty on the mark.\n\nb. If the assignment is submitted more than 14 days after the deadline, it will receive a 0% mark.\n\nc. The lecturer may, at their discretion, still review the late submission for feedback, even if it receives a 0% mark.\n\nd. If the assignment is a group project, the late submission penalty applies to all group members, as the work should be submitted in its complete entirety.\n\nSo in summary, submitting the NLP assignment late will result in a 40% penalty, and if it's more than 14 days late, it will receive a 0% mark, though the lecturer may still provide feedback.",
+      "rag_keyword_score": 0.6,
+      "rag_response_time": 3.029461622238159,
+      "rag_source_count": 3,
+      "rag_has_source": true,
+      "rag_word_count": 124
+    },
+    {
+      "question": "Can I use AI tools when writing my NLP assignment?",
+      "category": "NLP – AI Policy",
+      "expected_keywords": [
+        "AI",
+        "level 2",
+        "brainstorming",
+        "no AI content",
+        "submission"
+      ],
+      "rag_answer": "Based on the information provided in the context, the answer is:\n\n\"I could not find this information in the provided university documents.\"\n\nThe context does not contain any information about using AI tools when writing an NLP assignment. The documents discuss using AI for brainstorming, creating structures, and generating ideas, as well as using AI to improve the clarity and quality of student work. However, they do not specifically mention the use of AI for writing NLP assignments.",
+      "rag_keyword_score": 0.4,
+      "rag_response_time": 1.0932788848876953,
+      "rag_source_count": 3,
+      "rag_has_source": true,
+      "rag_word_count": 78
+    },
+    {
+      "question": "What file format must be submitted to Moodle for the NLP assignment?",
+      "category": "NLP – Submission Format",
+      "expected_keywords": [
+        "CA02",
+        "surname",
+        "student-ID",
+        "pdf",
+        "moodle"
+      ],
+      "rag_answer": "According to the context, the NLP assignment must be submitted as a single PDF file named \"CA02_Surname_First Name_Student-ID\".\n\nThe relevant information is from the \"Submission\" section on page 2 of the \"MSc AI NLP CA 2 Assessment.pdf\" document:\n\n\"1. A SINGLE pdf file named CA02_Surname_First Name_Student-ID\"",
+      "rag_keyword_score": 0.8,
+      "rag_response_time": 1.5552105903625488,
+      "rag_source_count": 3,
+      "rag_has_source": true,
+      "rag_word_count": 46
+    },
+    {
+      "question": "What are the MIMLOs being assessed in NLP CA2?",
+      "category": "NLP – Learning Outcomes",
+      "expected_keywords": [
+        "MIMLO04",
+        "MIMLO05",
+        "MIMLO06",
+        "learning outcomes"
+      ],
+      "rag_answer": "According to the information provided in the \"MSc AI GraphAI CA 2 Assessment.pdf\" document, the MIMLOs (Minimum Intended Module Learning Outcomes) being assessed in the NLP CA2 assessment are:\n\nMIMLO02\nMIMLO04\nMIMLO05\n\nThe document states \"MIMLO Alignment (see Module Guide for Minimum Intended Learning Outcomes for Module) MIMLO criterion aligned: MIMLO02 MIMLO04 MIMLO05\".",
+      "rag_keyword_score": 0.75,
+      "rag_response_time": 1.438610315322876,
+      "rag_source_count": 3,
+      "rag_has_source": true,
+      "rag_word_count": 53
+    },
+    {
+      "question": "What are the grading criteria for the modelling section in NLP CA2?",
+      "category": "NLP – Grading Criteria",
+      "expected_keywords": [
+        "modelling",
+        "criterion",
+        "003",
+        "25%",
+        "libraries"
+      ],
+      "rag_answer": "I could not find the specific grading criteria for the \"modelling section\" in the provided university documents. The documents outline general grading criteria for the overall NLP CA2 assessment, but do not appear to have details on the specific criteria for the modelling section. The available information focuses on broader criteria like \"Requirements and Design\", \"Implementation\", \"Documentation\", and \"Presentation\", but does not mention a distinct \"modelling\" criterion.",
+      "rag_keyword_score": 0.4,
+      "rag_response_time": 1.1724534034729004,
+      "rag_source_count": 3,
+      "rag_has_source": true,
+      "rag_word_count": 67
+    },
+    {
+      "question": "Who is the lecturer for the NLP module B9AI006?",
+      "category": "NLP – Module Info",
+      "expected_keywords": [
+        "lecturer",
+        "NLP",
+        "B9AI006",
+        "module"
+      ],
+      "rag_answer": "According to the context provided, the lecturer for the NLP module B9AI006 is Terri Hoare.",
+      "rag_keyword_score": 1.0,
+      "rag_response_time": 0.71622633934021,
+      "rag_source_count": 3,
+      "rag_has_source": true,
+      "rag_word_count": 15
+    },
+    {
+      "question": "What are the three sections of the NLP individual report?",
+      "category": "NLP – Report Structure",
+      "expected_keywords": [
+        "ethics",
+        "bias",
+        "modelling",
+        "critique",
+        "performance",
+        "evaluation"
+      ],
+      "rag_answer": "Based on the information provided in the context, the three sections of the NLP individual report are:\n\n1. Context (topic, motivation; arising from literature review)\n2. (Where is this paper coming from (what is the research topic)?; what are the main issues/themes in this topic?; what prior academic work is relevant to this research topic and have the authors adequately)\n3. [No third section is mentioned in the context provided.]\n\nThe context states that the research paper should be summarized under these seven headings, but only the first two are listed in the provided information.",
+      "rag_keyword_score": 0.0,
+      "rag_response_time": 1.4216983318328857,
+      "rag_source_count": 3,
+      "rag_has_source": true,
+      "rag_word_count": 95
+    },
+    {
+      "question": "What happens if the NLP assignment is submitted more than 14 days late?",
+      "category": "NLP – Late Submission",
+      "expected_keywords": [
+        "0%",
+        "14 days",
+        "zero",
+        "late",
+        "penalty"
+      ],
+      "rag_answer": "According to the information provided in the university documents, if an assignment is submitted more than 14 days late, the following applies:\n\n\"c. Where a late assessment is submitted within 14 days of the deadline, and is of a passing standard, the late penalty is capped (such that the minimum grade that can be awarded is 40% for the late submission).\"\n\nThe context does not mention what happens if an assignment is submitted more than 14 days late. The documents only specify the late penalty policy for submissions within 14 days of the deadline.",
+      "rag_keyword_score": 0.8,
+      "rag_response_time": 1.3712687492370605,
+      "rag_source_count": 3,
+      "rag_has_source": true,
+      "rag_word_count": 94
+    },
+    {
+      "question": "What programming language and environment is required for the NLP project?",
+      "category": "NLP – Technical Requirements",
+      "expected_keywords": [
+        "python",
+        "jupyter",
+        "notebook",
+        "programming",
+        "language"
+      ],
+      "rag_answer": "Based on the information provided in the context, the NLP project requires the use of Python. Specifically, the context states:\n\n\"Use either the Clinician ICD Disease code dataset OR the BLOG GENDER dataset provided to build a Classifier using Python.\"\n\nThis indicates that the NLP project should be implemented using the Python programming language.\n\nThe context does not mention any specific programming environment, so the choice of programming environment is not specified.",
+      "rag_keyword_score": 0.6,
+      "rag_response_time": 1.198808193206787,
+      "rag_source_count": 3,
+      "rag_has_source": true,
+      "rag_word_count": 72
+    },
+    {
+      "question": "What is the maximum group size for NLP CA2?",
+      "category": "NLP – Group Policy",
+      "expected_keywords": [
+        "group",
+        "students",
+        "maximum",
+        "members",
+        "team"
+      ],
+      "rag_answer": "The context provided does not mention a maximum group size for the NLP CA2 assignment. The documents discuss the deliverables and general requirements for the assignment, but do not specify a group size limit. Therefore, I could not find this information in the provided university documents.",
+      "rag_keyword_score": 0.4,
+      "rag_response_time": 0.8464615345001221,
+      "rag_source_count": 3,
+      "rag_has_source": true,
+      "rag_word_count": 46
+    },
+    {
+      "question": "What is CRISP-DM and what are its main phases?",
+      "category": "CRISP-DM Methodology",
+      "expected_keywords": [
+        "CRISP-DM",
+        "business understanding",
+        "data understanding",
+        "modelling",
+        "deployment"
+      ],
+      "rag_answer": "According to the information provided in the context, CRISP-DM (Cross-Industry Standard Process for Data Mining) is a methodology with six main phases:\n\n1. Business Understanding - Exploring the domain use case.\n2. Data Understanding - Exploring the dataset.\n3. Data Preparation - Applying appropriate feature extraction to prepare the data for modelling.\n4. Modelling - Applying appropriate Algorithm(s) to build a Classifier.\n5. Evaluation - Interpreting the performance of the Classifier in the context of your domain problem.\n\nThe context indicates that students are expected to write up their findings for a case study exercise under these CRISP-DM headings.",
+      "rag_keyword_score": 0.8,
+      "rag_response_time": 2.055185317993164,
+      "rag_source_count": 3,
+      "rag_has_source": true,
+      "rag_word_count": 99
+    },
+    {
+      "question": "What datasets are suggested for the NLP CA2 project?",
+      "category": "NLP – Dataset",
+      "expected_keywords": [
+        "dataset",
+        "kaggle",
+        "hugging face",
+        "data",
+        "NLP"
+      ],
+      "rag_answer": "I could not find any information in the provided university documents about specific datasets suggested for the NLP CA2 project. The documents discuss general guidelines for machine learning and pattern recognition projects, but do not mention any recommended datasets for an NLP assignment.",
+      "rag_keyword_score": 0.6,
+      "rag_response_time": 0.7446238994598389,
+      "rag_source_count": 3,
+      "rag_has_source": true,
+      "rag_word_count": 43
+    },
+    {
+      "question": "What is the submission format for the Machine Learning and Pattern Recognition CA2 assignment?",
+      "category": "ML – Submission Format",
+      "expected_keywords": [
+        "pdf",
+        "zip",
+        "moodle",
+        "submission",
+        "format"
+      ],
+      "rag_answer": "According to the context provided:\n\n\"Where a submission involves digital media (i.e formats other than Word, Powerpoint or PDF), it is the submitting students' responsibility to ensure the media is appropriately labelled, fully working and they must retain a copy.\"\n\nSo the submission format for the Machine Learning and Pattern Recognition CA2 assignment can be in formats other than Word, PowerPoint, or PDF, but the students are responsible for ensuring the media is properly labeled and fully working, and they must retain a copy.\n\nThe context does not specify any other details about the required submission format.",
+      "rag_keyword_score": 0.6,
+      "rag_response_time": 1.436964988708496,
+      "rag_source_count": 3,
+      "rag_has_source": true,
+      "rag_word_count": 97
+    },
+    {
+      "question": "What machine learning algorithms or models are expected in the ML CA2 assignment?",
+      "category": "ML – Technical Content",
+      "expected_keywords": [
+        "algorithm",
+        "classification",
+        "model",
+        "supervised",
+        "prediction"
+      ],
+      "rag_answer": "I could not find any information in the provided university documents about the specific machine learning algorithms or models expected in the ML CA2 assignment. The context only provides details about the assessment criteria and general requirements, but does not mention the expected algorithms or models to be used. Without further information from the course materials, I cannot definitively answer what algorithms or models are expected in this assignment.",
+      "rag_keyword_score": 0.4,
+      "rag_response_time": 1.0697786808013916,
+      "rag_source_count": 3,
+      "rag_has_source": true,
+      "rag_word_count": 69
+    },
+    {
+      "question": "How many marks is the Machine Learning CA1 assignment worth?",
+      "category": "ML – Assessment Details",
+      "expected_keywords": [
+        "marks",
+        "CA1",
+        "machine learning",
+        "assessment",
+        "weighting"
+      ],
+      "rag_answer": "According to the information provided in the context, the Machine Learning and Pattern Recognition CA1 assignment is worth 40% of the overall module assessment.\n\nThe relevant information is from the \"Assessment\" section on page 1 of the \"MACHINE LEARNING AND PATTERN RECOGNITION CA1.pdf\" document:\n\n\"Percentage (%) Weighting: 40%\"\n\nThis indicates that the CA1 assignment is worth 40% of the total marks for the Machine Learning and Pattern Recognition module.",
+      "rag_keyword_score": 1.0,
+      "rag_response_time": 2.1141467094421387,
+      "rag_source_count": 3,
+      "rag_has_source": true,
+      "rag_word_count": 69
+    },
+    {
+      "question": "What evaluation metrics are required for the Machine Learning assignment?",
+      "category": "ML – Evaluation Metrics",
+      "expected_keywords": [
+        "accuracy",
+        "precision",
+        "recall",
+        "F1",
+        "evaluation"
+      ],
+      "rag_answer": "According to the context provided in the MACHINE LEARNING AND PATTERN RECOGNITION CA1.pdf document:\n\nThe key assessment areas for the \"Choice of Evaluation Metric\" section include:\n\n\"Justification for chosen evaluation metric(s)\nAlignment between the business/context goal and the metric\nEvidence of implementation and correct usage\"\n\nThe document also states that \"Appropriate metric(s) chosen for classification (e.g., precision, Recall, F1)\" would be evaluated, and that the metric should be \"suitable\" with a \"clear justification for selection and strong understanding shown.\"\n\nSo the required evaluation metrics for this assignment appear to be precision, recall, and F1 score, as these are specifically mentioned as examples of appropriate classification metrics. The student should justify the choice of these metrics and demonstrate a strong understanding of how they are implemented and used.",
+      "rag_keyword_score": 0.8,
+      "rag_response_time": 1.76206636428833,
+      "rag_source_count": 3,
+      "rag_has_source": true,
+      "rag_word_count": 127
+    },
+    {
+      "question": "Who is the lecturer for the Machine Learning and Pattern Recognition module B9AI102?",
+      "category": "ML – Module Info",
+      "expected_keywords": [
+        "lecturer",
+        "machine learning",
+        "module",
+        "B9AI102"
+      ],
+      "rag_answer": "According to the information provided in the context, the lecturer for the Machine Learning and Pattern Recognition module B9AI102 is Assem Abdel-Hak.",
+      "rag_keyword_score": 1.0,
+      "rag_response_time": 0.7655215263366699,
+      "rag_source_count": 3,
+      "rag_has_source": true,
+      "rag_word_count": 22
+    },
+    {
+      "question": "What is the submission deadline for the Machine Learning CA2 assignment?",
+      "category": "ML – Submission Policy",
+      "expected_keywords": [
+        "deadline",
+        "submission",
+        "CA2",
+        "machine learning",
+        "date"
+      ],
+      "rag_answer": "According to the context provided, the submission deadline for the Machine Learning and Pattern Recognition CA2 assignment is in Week 12.\n\nThe relevant information is found on page 2 of the document, which states:\n\n\"Submission Date: Week 12\"",
+      "rag_keyword_score": 1.0,
+      "rag_response_time": 0.8548741340637207,
+      "rag_source_count": 3,
+      "rag_has_source": true,
+      "rag_word_count": 38
+    },
+    {
+      "question": "What dataset is used in the Machine Learning CA2 assignment?",
+      "category": "ML – Dataset",
+      "expected_keywords": [
+        "dataset",
+        "data",
+        "machine learning",
+        "CA2",
+        "features"
+      ],
+      "rag_answer": "I could not find information about the specific dataset used in the Machine Learning CA2 assignment in the provided university documents.\n\nThe context only describes the general requirements and performance criteria for the assignment, but does not mention the dataset that students are expected to use.",
+      "rag_keyword_score": 0.8,
+      "rag_response_time": 0.895186185836792,
+      "rag_source_count": 3,
+      "rag_has_source": true,
+      "rag_word_count": 46
+    },
+    {
+      "question": "What is the focus of the Graph AI CA1 assessment?",
+      "category": "Graph AI – Assessment",
+      "expected_keywords": [
+        "graph",
+        "AI",
+        "CA1",
+        "assessment",
+        "network"
+      ],
+      "rag_answer": "Based on the information provided in the context, the focus of the Graph AI CA1 assessment is:\n\n\"to build on your awareness of state of the art in Graph Learning in AI research\"\n\nThe context states that the research paper should be summarized under the following headings:\n\n1. Context (topic, motivation; arising from literature review)\n2. Where is this paper coming from (what is the research topic)?\n3. What are the main issues/themes in this topic?\n4. What prior academic work is relevant to this research topic and have the authors adequately covered it?\n\nSo the CA1 assessment is focused on demonstrating your awareness and understanding of the current state-of-the-art in graph learning research in AI.",
+      "rag_keyword_score": 0.8,
+      "rag_response_time": 1.6450896263122559,
+      "rag_source_count": 3,
+      "rag_has_source": true,
+      "rag_word_count": 116
+    },
+    {
+      "question": "Who lectures the Graph and AI module at DBS?",
+      "category": "Graph AI – Module Info",
+      "expected_keywords": [
+        "graph",
+        "AI",
+        "lecturer",
+        "DBS",
+        "module"
+      ],
+      "rag_answer": "I could not find this information in the provided university documents.",
+      "rag_keyword_score": 0.0,
+      "rag_response_time": 0.6469848155975342,
+      "rag_source_count": 3,
+      "rag_has_source": true,
+      "rag_word_count": 11
+    },
+    {
+      "question": "What is the submission deadline for the Graph AI CA2 assignment?",
+      "category": "Graph AI – Submission Policy",
+      "expected_keywords": [
+        "deadline",
+        "submission",
+        "CA2",
+        "graph",
+        "date"
+      ],
+      "rag_answer": "I could not find the specific submission deadline for the Graph AI CA2 assignment in the provided university documents.\n\nThe context includes information about general requirements for assignments, such as:\n\n1. All assignments must be submitted no later than the stated deadline (date and time).\n2. Assignments submitted after the latest deadline specified (including any approved extension deadline) are considered late and penalised.\n\nHowever, the documents do not mention the specific deadline for the Graph AI CA2 assignment. The information about the assessment criteria and requirements for the Graph AI module is provided, but the submission deadline is not stated.",
+      "rag_keyword_score": 1.0,
+      "rag_response_time": 1.251565933227539,
+      "rag_source_count": 3,
+      "rag_has_source": true,
+      "rag_word_count": 100
+    },
+    {
+      "question": "What algorithms or techniques are expected in the Graph AI module assignments?",
+      "category": "Graph AI – Technical Content",
+      "expected_keywords": [
+        "graph",
+        "algorithm",
+        "node",
+        "edge",
+        "network"
+      ],
+      "rag_answer": "Based on the information provided in the context, the Graph AI module assignments are expected to involve the following algorithms or techniques:\n\n1. \"Apply appropriate graph algorithms to derive insights from the data.\" This suggests that the assignments will require the use of various graph algorithms to analyze and gain insights from the graph data.\n\n2. \"Explore graph embeddings and machine learning use cases on your graph network.\" This indicates that the assignments will involve the use of graph embedding techniques and the application of machine learning models on the graph data.\n\nHowever, the specific algorithms or techniques are not explicitly mentioned in the provided context. The context only outlines the general expectations and requirements for the module assessments, but does not provide details on the exact algorithms or techniques to be used.",
+      "rag_keyword_score": 0.6,
+      "rag_response_time": 1.499450445175171,
+      "rag_source_count": 3,
+      "rag_has_source": true,
+      "rag_word_count": 133
+    },
+    {
+      "question": "What are the learning outcomes of the Graph and AI module?",
+      "category": "Graph AI – Learning Outcomes",
+      "expected_keywords": [
+        "learning outcomes",
+        "graph",
+        "AI",
+        "module",
+        "skills"
+      ],
+      "rag_answer": "Based on the information provided in the context, I could not find the specific learning outcomes for the Graph and AI module. The context focuses on the assessment tasks and requirements, but does not explicitly state the learning outcomes for the module.\n\nThe context indicates that the purpose of the research paper assignment is:\n\n(i) to develop your ability to critically read a technical topic and summarize your view of it.\n(ii) to build on your awareness of state of the art in Graph Learning in AI research.\n\nHowever, the learning outcomes for the overall module are not specified in the provided documents.",
+      "rag_keyword_score": 0.8,
+      "rag_response_time": 1.541637659072876,
+      "rag_source_count": 3,
+      "rag_has_source": true,
+      "rag_word_count": 103
+    },
+    {
+      "question": "What is the topic of the Recommender Systems CA2 assessment?",
+      "category": "Recommender Systems – Assessment",
+      "expected_keywords": [
+        "recommender",
+        "systems",
+        "CA2",
+        "collaborative",
+        "filtering"
+      ],
+      "rag_answer": "I could not find the specific topic of the Recommender Systems CA2 assessment in the provided university documents.\n\nThe context only provides information about the CA1 assessment, including the module title, code, lecturer, program, assessment method, weighting, MIMLOs being assessed, assessment number, group size, issue date, submission date, feedback date, and feedback strategy.\n\nThere is no information given about the topic or details of the CA2 assessment.",
+      "rag_keyword_score": 0.6,
+      "rag_response_time": 1.3169543743133545,
+      "rag_source_count": 3,
+      "rag_has_source": true,
+      "rag_word_count": 67
+    },
+    {
+      "question": "What techniques are covered in the Recommender Systems module B9AI103?",
+      "category": "Recommender Systems – Technical Content",
+      "expected_keywords": [
+        "collaborative filtering",
+        "content-based",
+        "matrix factorisation",
+        "recommender",
+        "rating"
+      ],
+      "rag_answer": "Based on the information provided in the context, the Recommender Systems module B9AI103 covers the following techniques:\n\n1. Collaborative Filtering and Content-Based Filtering or Hybrid recommender systems:\n   The context states that students are required to \"Design and implement at least two distinct types of recommender systems (e.g., Collaborative Filtering and Content-Based Filtering or Hybrid).\"\n\n2. Offline evaluation using appropriate metrics:\n   The context mentions that students need to \"Apply and report on a comprehensive offline evaluation strategy using appropriate metrics like NDCG and MAP.\"\n\n3. Cold-start mitigation:\n   The context states that students need to \"Implement and discuss a cold-start mitigation strategy.\"\n\nThe context does not provide any additional information about other specific techniques covered in the module.",
+      "rag_keyword_score": 0.6,
+      "rag_response_time": 1.5061681270599365,
+      "rag_source_count": 3,
+      "rag_has_source": true,
+      "rag_word_count": 116
+    },
+    {
+      "question": "Who is the lecturer for the Recommender Systems module B9AI103?",
+      "category": "Recommender Systems – Module Info",
+      "expected_keywords": [
+        "lecturer",
+        "recommender",
+        "B9AI103",
+        "module"
+      ],
+      "rag_answer": "According to the context, the lecturer for the Recommender Systems module B9AI103 is Nitya Govindaraju.",
+      "rag_keyword_score": 1.0,
+      "rag_response_time": 0.7299160957336426,
+      "rag_source_count": 3,
+      "rag_has_source": true,
+      "rag_word_count": 15
+    },
+    {
+      "question": "What dataset is used in the Recommender Systems CA1 assignment?",
+      "category": "Recommender Systems – Dataset",
+      "expected_keywords": [
+        "dataset",
+        "recommender",
+        "CA1",
+        "data",
+        "ratings"
+      ],
+      "rag_answer": "The context provided does not specify the dataset used in the Recommender Systems CA1 assignment. The instructions state that students should \"Select a real-world recommendation problem and dataset\", but the actual dataset is not mentioned.\n\nTherefore, I could not find this information in the provided university documents.",
+      "rag_keyword_score": 0.8,
+      "rag_response_time": 0.8671717643737793,
+      "rag_source_count": 3,
+      "rag_has_source": true,
+      "rag_word_count": 47
+    },
+    {
+      "question": "What evaluation metrics are required for the Recommender Systems assignment?",
+      "category": "Recommender Systems – Evaluation",
+      "expected_keywords": [
+        "RMSE",
+        "MAE",
+        "precision",
+        "recall",
+        "evaluation"
+      ],
+      "rag_answer": "According to the context, the required evaluation metrics for the Recommender Systems assignment are:\n\n\"Effective evaluation methodology is applied using appropriate metrics (NDCG, MAP).\"\n\nThe context states that for the \"Excellent\" grade range, the assignment should contain \"Highly effective offline evaluation strategy is applied with accurate metrics.\"\n\nSo the specific metrics mentioned are NDCG (Normalized Discounted Cumulative Gain) and MAP (Mean Average Precision).",
+      "rag_keyword_score": 0.4,
+      "rag_response_time": 1.627394437789917,
+      "rag_source_count": 3,
+      "rag_has_source": true,
+      "rag_word_count": 63
+    },
+    {
+      "question": "What is the focus of the Deep Learning module B9AI104?",
+      "category": "Deep Learning – Module Info",
+      "expected_keywords": [
+        "deep learning",
+        "neural network",
+        "B9AI104",
+        "module",
+        "layers"
+      ],
+      "rag_answer": "According to the Deep Learning Module Descriptor, the focus of the Deep Learning module B9AI104 is:\n\n1. Convolutional Neural Networks (CNNs):\n   The module takes students through the intricacies of CNNs, covering the core architectural components like convolution, pooling, and fully connected layers, as well as exploring more sophisticated CNN architectures like ResNet, Inception, and VGG.\n\n2. Deep Learning Design:\n   Students are required to discuss the design of each Deep Learning model, highlighting the strengths, weaknesses, and notable artifacts, and include conclusions, a bibliography, and relevant screenshots with explanations.\n\n3. Application Deployment:\n   Students are expected to implement and deploy the insights from the Deep Learning models in a micro-framework, ideally as a web application.\n\nSo in summary, the focus of the Deep Learning module B9AI104 is on understanding and applying convolutional neural networks, designing deep learning models, and deploying the insights in a practical application.",
+      "rag_keyword_score": 1.0,
+      "rag_response_time": 1.853539228439331,
+      "rag_source_count": 3,
+      "rag_has_source": true,
+      "rag_word_count": 144
+    },
+    {
+      "question": "Who is the lecturer for the Deep Learning module at DBS?",
+      "category": "Deep Learning – Module Info",
+      "expected_keywords": [
+        "lecturer",
+        "deep learning",
+        "DBS",
+        "module",
+        "B9AI104"
+      ],
+      "rag_answer": "According to the context provided, the lecturer for the Deep Learning module is Dr Shahram Azizi Sazi.\n\nThe relevant information is found on page 5 of the \"Deep Learning Module Descriptor.pdf\" document, which states:\n\n\"Module Title: Deep Learning\nModule Code: B9AI104\nModule Lecturer (s): Dr Shahram Azizi Sazi\nProgramme/Cohort: Msc in AI\"",
+      "rag_keyword_score": 0.8,
+      "rag_response_time": 1.0791430473327637,
+      "rag_source_count": 3,
+      "rag_has_source": true,
+      "rag_word_count": 52
+    },
+    {
+      "question": "What neural network architectures are covered in the Deep Learning module?",
+      "category": "Deep Learning – Technical Content",
+      "expected_keywords": [
+        "CNN",
+        "RNN",
+        "LSTM",
+        "neural network",
+        "architecture"
+      ],
+      "rag_answer": "According to the Deep Learning Module Descriptor, the module covers the following neural network architectures:\n\n- Convolutional Neural Networks (CNNs)\n- ResNet\n- Inception\n- VGG\n\nThe context states that the module \"takes them through the intricacies of convolutional neural networks (CNNs), where they uncover the magic behind image recognition and computer vision.\" It also mentions that the module explores \"more sophisticated CNN architectures like ResNet, Inception, and VGG\".",
+      "rag_keyword_score": 0.6,
+      "rag_response_time": 1.2635560035705566,
+      "rag_source_count": 3,
+      "rag_has_source": true,
+      "rag_word_count": 69
+    },
+    {
+      "question": "What assessment components make up the Deep Learning module grade?",
+      "category": "Deep Learning – Assessment",
+      "expected_keywords": [
+        "assessment",
+        "CA1",
+        "CA2",
+        "deep learning",
+        "marks"
+      ],
+      "rag_answer": "According to the Deep Learning Module Descriptor, the assessment for this module consists of:\n\n\"This assignment is an individual project, and each learner is required to submit their final work.\"\n\nThe module descriptor does not provide any further details on the specific assessment components or their weightings that make up the overall module grade. The information given is limited to it being an individual project assignment.",
+      "rag_keyword_score": 0.4,
+      "rag_response_time": 1.068908929824829,
+      "rag_source_count": 3,
+      "rag_has_source": true,
+      "rag_word_count": 66
+    },
+    {
+      "question": "What programming frameworks are used in the Deep Learning assignments?",
+      "category": "Deep Learning – Technical Content",
+      "expected_keywords": [
+        "TensorFlow",
+        "Keras",
+        "PyTorch",
+        "deep learning",
+        "framework"
+      ],
+      "rag_answer": "Based on the information provided in the Deep Learning Module Descriptor, the context does not mention any specific programming frameworks used for the assignments. The document states that students are required to \"Implement and deploy insights in a micro-framework, ideally as a web application\", but it does not specify which frameworks are used.\n\nTherefore, I could not find this information in the provided university documents.",
+      "rag_keyword_score": 0.4,
+      "rag_response_time": 1.033141851425171,
+      "rag_source_count": 3,
+      "rag_has_source": true,
+      "rag_word_count": 65
+    },
+    {
+      "question": "What is the focus of the Reinforcement Learning CA1 assessment?",
+      "category": "Reinforcement Learning – Assessment",
+      "expected_keywords": [
+        "reinforcement learning",
+        "CA1",
+        "agent",
+        "reward",
+        "policy"
+      ],
+      "rag_answer": "According to the context provided, the focus of the Reinforcement Learning CA1 assessment is:\n\n\"Solve a real-world problem using Reinforcement Learning models. Building from CA 1, students need to \ndeploy their RL solution developed in CA  1 and demonstrate its real -world application (e.g., in an app, \ncontrolling a physical robot/electronics, website or software).\"\n\nThe key points are:\n- Solve a real-world problem using Reinforcement Learning models\n- Build on the work done in CA1\n- Deploy the RL solution and demonstrate its real-world application\n\nThis information is contained in the \"Assignment Task\" section on page 1 of the \"Reinforcement learning CA2.pdf\" document.",
+      "rag_keyword_score": 0.4,
+      "rag_response_time": 1.6995773315429688,
+      "rag_source_count": 3,
+      "rag_has_source": true,
+      "rag_word_count": 103
+    },
+    {
+      "question": "Who is the lecturer for the Reinforcement Learning module B9AI105?",
+      "category": "Reinforcement Learning – Module Info",
+      "expected_keywords": [
+        "lecturer",
+        "reinforcement learning",
+        "B9AI105",
+        "module"
+      ],
+      "rag_answer": "According to the context provided, the lecturer for the Reinforcement Learning module B9AI105 is Dr. Anesu Nyabadza.",
+      "rag_keyword_score": 1.0,
+      "rag_response_time": 0.8941071033477783,
+      "rag_source_count": 3,
+      "rag_has_source": true,
+      "rag_word_count": 17
+    },
+    {
+      "question": "What algorithms are covered in the Reinforcement Learning module?",
+      "category": "Reinforcement Learning – Technical Content",
+      "expected_keywords": [
+        "Q-learning",
+        "policy",
+        "reward",
+        "agent",
+        "environment"
+      ],
+      "rag_answer": "Based on the information provided in the context, the following reinforcement learning algorithms are mentioned:\n\n- Q-Learning\n- SARSA\n- DQN (Deep Q-Network)\n- Double DQN\n- DDPG (Deep Deterministic Policy Gradient)\n- PPO (Proximal Policy Optimization)\n- TD3 (Twin Delayed DDPG)\n\nThe context states that the student should \"Justifying the chosen RL algorithm(s), such as Q-Learning, SARSA, DQN, Double DQN, DDPG, PPO, or TD3.\"",
+      "rag_keyword_score": 0.4,
+      "rag_response_time": 1.7452857494354248,
+      "rag_source_count": 3,
+      "rag_has_source": true,
+      "rag_word_count": 65
+    },
+    {
+      "question": "What is the submission format for the Programming for Data Analysis CA2?",
+      "category": "Programming – Submission",
+      "expected_keywords": [
+        "submission",
+        "format",
+        "CA2",
+        "data analysis",
+        "pdf"
+      ],
+      "rag_answer": "According to the information provided in the context:\n\n\"Two files should be loaded to Moodle on or before Sunday of Reading Week (23:59).\n1. A SINGLE pdf file named CA01_Surname_First Name_Student-ID\n2. A zipped file including your code.\"\n\nSo the submission format for the Programming for Data Analysis CA2 is:\n1. A single PDF file with the naming convention \"CA01_Surname_First Name_Student-ID\"\n2. A zipped file containing the code\n\nThis information is from the \"MSc AI NLP CA 1 Assessment.pdf\" document on page 3.",
+      "rag_keyword_score": 1.0,
+      "rag_response_time": 1.4889566898345947,
+      "rag_source_count": 3,
+      "rag_has_source": true,
+      "rag_word_count": 83
+    },
+    {
+      "question": "What is the weighting of the Programming for Data Analysis CA2 assignment?",
+      "category": "Programming – Assessment Details",
+      "expected_keywords": [
+        "weighting",
+        "marks",
+        "CA2",
+        "data analysis",
+        "assessment"
+      ],
+      "rag_answer": "I could not find any information about a \"Programming for Data Analysis CA2\" assignment in the provided university documents. The context only discusses the \"Machine Learning and Pattern Recognition CA2\" assignment, which has a weighting of 60% according to the information on page 2.",
+      "rag_keyword_score": 0.6,
+      "rag_response_time": 0.9176633358001709,
+      "rag_source_count": 3,
+      "rag_has_source": true,
+      "rag_word_count": 44
+    },
+    {
+      "question": "What are the DBS exam regulations regarding academic misconduct?",
+      "category": "DBS Regulations",
+      "expected_keywords": [
+        "academic misconduct",
+        "exam",
+        "regulations",
+        "DBS",
+        "penalty"
+      ],
+      "rag_answer": "According to the DBS exam regulations:\n\nThe regulations state that all students are expected to adhere to the exam regulations and respect and comply with the College's Academic Integrity Policy and the DBS Learners Charter (Section 4.1).\n\nThe regulations also state that any form of communication or collusion during an exam, such as sending or receiving electronic communications or working with one or more people, is a serious breach of the integrity of the exam and exam regulations and will be investigated and penalized accordingly (Section 4.3).\n\nAdditionally, the removal of DBS exam materials or exam answers from the test location, or the copying, recording or transmission of exam materials is also prohibited and considered a breach of the regulations (Section 4.4).\n\nThe regulations aim to prevent any student from gaining an unfair advantage during exams and support all students in performing to the best of their ability (Section 1).",
+      "rag_keyword_score": 0.6,
+      "rag_response_time": 1.8987107276916504,
+      "rag_source_count": 3,
+      "rag_has_source": true,
+      "rag_word_count": 150
+    },
+    {
+      "question": "What is the DBS policy on late submission of coursework?",
+      "category": "DBS Regulations",
+      "expected_keywords": [
+        "late submission",
+        "penalty",
+        "marks",
+        "DBS",
+        "coursework"
+      ],
+      "rag_answer": "According to the information provided in the university documents:\n\n1. Where the assessment is undertaken in a group, the piece of work should be submitted in its complete entirety, and any penalty for late submission incurred applies to all group members.\n\n2. Extensions to assignment submission deadlines will not be granted, other than in exceptional circumstances. \n\n3. To apply for an extension, students must go to https://students.dbs.ie/dashboard/SCCM and open a ticket.\n\nSo in summary, the DBS policy is that late submission of coursework is generally not allowed, except in exceptional circumstances where students can apply for an extension through the provided online system.",
+      "rag_keyword_score": 0.8,
+      "rag_response_time": 1.4429597854614258,
+      "rag_source_count": 3,
+      "rag_has_source": true,
+      "rag_word_count": 103
+    },
+    {
+      "question": "What are the DBS grading bands and their percentage ranges?",
+      "category": "DBS Regulations",
+      "expected_keywords": [
+        "distinction",
+        "merit",
+        "pass",
+        "fail",
+        "percentage"
+      ],
+      "rag_answer": "Based on the information provided in the context, the grading criteria and percentage ranges are as follows:\n\nExceptional: 90-100%\nExcellent: No percentage range provided\n\nThe context does not contain information about any other DBS grading bands or their percentage ranges. The documents mention grading criteria and performance level descriptors, but do not explicitly list the full set of DBS grading bands and their corresponding percentage ranges.",
+      "rag_keyword_score": 0.2,
+      "rag_response_time": 1.4014980792999268,
+      "rag_source_count": 3,
+      "rag_has_source": true,
+      "rag_word_count": 66
+    },
+    {
+      "question": "What is the required referencing style for DBS MSc assignments?",
+      "category": "Academic Writing",
+      "expected_keywords": [
+        "referencing",
+        "Harvard",
+        "APA",
+        "citation",
+        "bibliography"
+      ],
+      "rag_answer": "According to the information provided in the context, the DBS Library website has \"Guides on referencing\" available at https://libguides.dbs.ie/referencing. However, the specific referencing style required for DBS MSc assignments is not explicitly stated in the given documents. Therefore, I could not find this information in the provided university documents.",
+      "rag_keyword_score": 0.2,
+      "rag_response_time": 1.3297266960144043,
+      "rag_source_count": 3,
+      "rag_has_source": true,
+      "rag_word_count": 49
+    },
+    {
+      "question": "What sections must be included in the NLP CA2 individual report?",
+      "category": "NLP – Report Requirements",
+      "expected_keywords": [
+        "introduction",
+        "methodology",
+        "results",
+        "conclusion",
+        "references"
+      ],
+      "rag_answer": "Based on the information provided in the context, the specific sections that must be included in the NLP CA2 individual report are not explicitly stated. \n\nThe context indicates that the assessment method is an \"Oral & Report\", with a \"Group Artefact and Presentation; Individual Report\" format. However, it does not provide details on the required sections or structure of the individual report.\n\nThe context also mentions that \"All relevant provisions of the Assessment Regulations must be complied with (see QAH B.5)\", but the specific details of those regulations are not included in the provided information.\n\nTherefore, I could not find the details about the required sections for the NLP CA2 individual report in the given university documents.",
+      "rag_keyword_score": 0.0,
+      "rag_response_time": 2.987501621246338,
+      "rag_source_count": 3,
+      "rag_has_source": true,
+      "rag_word_count": 117
+    },
+    {
+      "question": "What criteria determine the pass mark for MSc modules at Dublin Business School?",
+      "category": "DBS Regulations",
+      "expected_keywords": [
+        "pass mark",
+        "40",
+        "50",
+        "MSc",
+        "modules"
+      ],
+      "rag_answer": "I could not find information about the specific pass mark criteria for MSc modules at Dublin Business School in the provided university documents.\n\nThe documents cover the general examination regulations, such as student responsibilities, identification verification, and rules around online open-book examinations. However, they do not specify the pass mark requirements for MSc modules.\n\nWithout additional information from the university's program handbooks or other official sources, I cannot provide the details you requested about the pass mark criteria for MSc modules at Dublin Business School.",
+      "rag_keyword_score": 0.6,
+      "rag_response_time": 1.2036058902740479,
+      "rag_source_count": 3,
+      "rag_has_source": true,
+      "rag_word_count": 85
+    },
+    {
+      "question": "What is the word count requirement for the NLP CA2 individual report?",
+      "category": "NLP – Report Requirements",
+      "expected_keywords": [
+        "3000",
+        "words",
+        "report",
+        "individual",
+        "word count"
+      ],
+      "rag_answer": "I could not find the specific word count requirement for the NLP CA2 individual report in the provided university documents. The documents mention a 10% discretion, either way, applicable in terms of word count, but do not provide the exact word count requirement for this particular assignment.",
+      "rag_keyword_score": 0.6,
+      "rag_response_time": 0.8123815059661865,
+      "rag_source_count": 3,
+      "rag_has_source": true,
+      "rag_word_count": 47
+    }
+  ]
+}

@@ -1,0 +1,45 @@
+# =============================================================
+#  requirements.txt
+#  University Knowledge Base Chatbot – RAG Pipeline
+#  MSc AI | NLP Module (B9AI006) | Dublin Business School
+# =============================================================
+#
+#  ⚠️  IMPORTANT – use a virtual environment to avoid conflicts
+#  with other globally installed packages (browser-use, etc.)
+#
+#  Setup (run once):
+#      python -m venv venv
+#      venv\Scripts\activate        (Windows)
+#      source venv/bin/activate     (Mac/Linux)
+#      pip install -r requirements.txt
+#
+# =============================================================
+
+# ── Core LangChain  (pinned to 0.3.x – avoids conflicts with  ─
+#    browser-use / langchain-anthropic / langchain-ollama)     ─
+langchain>=0.3.0,<0.4.0
+langchain-core>=0.3.0,<0.4.0
+langchain-community>=0.3.0,<0.4.0
+
+# ── Anthropic integration ────────────────────────────────────
+langchain-anthropic>=0.3.0,<0.4.0
+anthropic>=0.40.0,<1.0.0
+
+# ── Vector Store ─────────────────────────────────────────────
+faiss-cpu>=1.7.4          # CPU version (use faiss-gpu if you have a GPU)
+
+# ── PDF Loading ──────────────────────────────────────────────
+pypdf>=3.17.0             # For PyPDFLoader
+
+# ── Streamlit UI ─────────────────────────────────────────────
+streamlit>=1.32.0
+
+# ── Environment / Config ─────────────────────────────────────
+python-dotenv>=1.0.0
+
+# ── Embeddings (local, free – no API key needed) ─────────────
+sentence-transformers>=2.7.0   # downloads all-MiniLM-L6-v2 (~22MB) on first run
+
+# -- RAGAS Evaluation ----------------------------------------------------
+ragas>=0.2.0                   # RAG evaluation: faithfulness, answer relevancy, etc.
+datasets>=2.18.0               # HuggingFace datasets (required by ragas)
