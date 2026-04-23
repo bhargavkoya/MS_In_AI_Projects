@@ -21,8 +21,9 @@ Traditional recommenders may miss complex user-item graph relationships or nuanc
 - LLM-assisted recommendation reasoning
 
 ## Results and Outputs
-- Notebook outputs contain implementation steps, intermediate outputs, and recommendation behavior.
-- Report artifacts provide detailed analysis and interpretation.
+- The notebook reports ranking metrics for the hybrid model, including NDCG@10 = 0.0478, Precision@10 = 0.0097, and HitRate@10 = 0.0965 in the ablation summary.
+- Ablation output compares three baselines (Popularity, Content-based SBERT, LightGCN+SBERT), with the hybrid setup showing the strongest overall Top-K ranking profile in notebook logs.
+- The report further documents an extended evaluation setting where LightGCN + SBERT achieves NDCG@10 = 0.2847, and ties these gains to graph-plus-semantic feature fusion.
 
 ## Local Setup and Run Steps
 Some setup details are not explicitly defined in this folder; inferred minimal steps are provided.
@@ -38,9 +39,9 @@ Some setup details are not explicitly defined in this folder; inferred minimal s
 - CA2_DemoQA_BhargavaKoya_20075511.docx: Demo QA support material.
 
 ## Limitations and Future Improvements
-- No explicit dependency manifest is included.
-- Reproducibility can be improved with pinned versions and setup automation.
-- Offline and online recommendation metrics can be reported in a consolidated benchmark section.
+- Report analysis identifies popularity bias as a persistent ethical/technical issue even in hybrid recommenders, with risk of over-exposing already popular items.
+- Explainability methods used (for example, LIME/SHAP discussion in report material) are useful but local/approximate, so explanations are not globally faithful for all recommendation contexts.
+- Future work documented in project materials includes calibrated re-ranking, adversarial debiasing, and stronger fairness-aware evaluation beyond standard Top-K utility metrics.
 
 ## Source Evidence Used
 - CA2_—_GAT_+_LLM_Hybrid_Movie_Recommender_System_BhargavaKoya_20075511 (1).ipynb

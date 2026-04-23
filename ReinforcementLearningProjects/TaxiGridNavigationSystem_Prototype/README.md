@@ -21,9 +21,9 @@ Grid-based taxi navigation requires efficient route planning under dynamic condi
 - JSON data artifacts
 
 ## Results and Outputs
-- RL experimentation outputs are available in notebook cells.
-- Analytical discussion is captured in project analysis markdown.
-- Interactive simulation output can be observed by running backend and frontend modules.
+- Notebook training logs show both Q-Learning and Monte Carlo reaching near-saturated success on the configured task (for example, Q-Learning hits 100% success by around episode 1000 in the printed checkpoints).
+- Hyperparameter sweeps are included in outputs (for example alpha and epsilon-decay variants), with comparative training traces and smoothed reward/success visualizations.
+- The prototype extends notebook logic into a runnable system: FastAPI backend (`main.py`, `rl_logic.py`) plus React/Vite frontend simulation workflow, documented in `PROJECT_ANALYSIS.md`.
 
 ## Local Setup and Run Steps
 1. Review RL_Assignment.ipynb for algorithmic workflow and outputs.
@@ -43,9 +43,9 @@ Grid-based taxi navigation requires efficient route planning under dynamic condi
 - Taxi Simulation Workflow Design/: Frontend simulation app with its own README and package files.
 
 ## Limitations and Future Improvements
-- End-to-end orchestration between backend and frontend can be further automated.
-- Integration testing across UI and RL backend can be expanded.
-- Benchmarking across alternative RL strategies can improve comparative insights.
+- Current backend architecture uses a global in-memory state model (documented in `PROJECT_ANALYSIS.md`), which is practical for demos but limited for multi-user or distributed deployment.
+- Evaluation is focused on one Taxi-style grid environment/reward design; broader policy robustness across alternative maps and reward schemes is still pending.
+- Future direction should include persistent experiment tracking, concurrent-session support, and expanded algorithm benchmarks (for example policy-gradient or value-based deep RL baselines).
 
 ## Source Evidence Used
 - RL_Assignment.ipynb

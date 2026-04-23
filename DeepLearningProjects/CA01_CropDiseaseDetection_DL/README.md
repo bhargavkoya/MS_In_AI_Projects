@@ -20,9 +20,9 @@ Manual crop disease identification is slow and can be error-prone at scale. The 
 - Deep Learning libraries used inside notebooks
 
 ## Results and Outputs
-- Model development and prediction outputs are available in the notebooks.
-- Notebook outputs are the primary evidence for training behavior and sample predictions.
-- Detailed narrative and interpretation are documented in the report file.
+- The training pipeline was executed on PlantVillage apple classes with explicit split counts in notebook output: 7,771 training images, 1,747 validation images, and 196 held-out test images.
+- The benchmark section compares four architectures (Custom CNN, EfficientNetB0, ResNet50, VGG16) on the same 196-image test set, and the notebook includes comparison tables/plots for test accuracy and loss.
+- End-to-end data preparation and inference workflow is reproducible in the demo notebook, including dataset download/extraction and class-wise split logging.
 
 ## Local Setup and Run Steps
 Some setup details are not explicitly defined in this folder; inferred minimal steps are provided.
@@ -38,9 +38,9 @@ Some setup details are not explicitly defined in this folder; inferred minimal s
 - CropDiseaseDetection_DL_BhargavKoya_20075511_Report.docx: Project report.
 
 ## Limitations and Future Improvements
-- Dependency versions are not pinned in this folder.
-- Reproducibility can be improved with a requirements file and fixed random seeds.
-- A packaged inference app and dataset documentation would improve usability.
+- The report explicitly notes a domain-gap risk: PlantVillage images are captured in controlled conditions, so real-field performance can degrade under variable lighting/backgrounds.
+- Disease-class overlap is a stated challenge (for example, Apple Scab vs Black Rot visual similarity), so further error-analysis and class-specific augmentation are needed.
+- The report also highlights compute constraints (VGG16 scale and training cost without strong GPU support); future work should focus on lighter deployment models and production-oriented inference packaging.
 
 ## Source Evidence Used
 - CropDiseaseDetection_DL_BhargavaKoya_20075511_Code.ipynb
