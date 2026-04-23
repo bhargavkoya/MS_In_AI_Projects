@@ -19,8 +19,9 @@ The objective is to apply academic research-methods practices to topic selection
 - Spreadsheet and document-based analysis artifacts
 
 ## Results and Outputs
-- Primary outputs are reports, proposal documents, and presentation files.
-- Dataset artifact provides structured values for analysis tasks.
+- The folder contains completed research-method outputs in multiple formats: critical review assignment, formal proposal form, proposal presentation, and supporting reference paper artifacts.
+- A structured tabular artifact (`Model accuracy dataset-BhargavChowdary.csv`) is included to support method/metric-oriented analysis components referenced in the research work.
+- Presentation/report materials converge on AI-in-education learning-analytics framing and provide auditable submission evidence for proposal rationale and methodology.
 
 ## Local Setup and Run Steps
 This folder is document-centric and does not require application runtime setup.
@@ -36,8 +37,9 @@ This folder is document-centric and does not require application runtime setup.
 - Model accuracy dataset-BhargavChowdary.csv: Supporting dataset.
 
 ## Limitations and Future Improvements
-- A concise synthesis markdown could improve discoverability across document artifacts.
-- Traceability between proposal claims and literature references can be expanded.
+- The critical review document explicitly flags limitations around reliance on synthetic data and faculty-perception evidence rather than live student validation.
+- Proposal materials highlight deployment and generalization challenges when extending across disciplines (STEM, social sciences, and arts) and real institutional settings.
+- Future directions stated in the documents include randomized controlled trials with real students, stronger human validation of model outputs, and broader longitudinal evaluation.
 
 ## Source Evidence Used
 - BhargavaKoya_20075511_CriticalResearchOfOneBEBestArticle_Assignment.docx

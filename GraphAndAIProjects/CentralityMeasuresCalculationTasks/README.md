@@ -20,9 +20,9 @@ Understanding influential nodes and structural behavior in a graph requires mult
 - CSV-based metric exports
 
 ## Results and Outputs
-- Centrality output tables are available as CSV artifacts.
-- Notebook outputs and supporting assignment PDF capture methodology and findings.
-- A graph relation visualization image is also included.
+- The notebook produces a concrete shortest-path result: node 1 to node 10 via [1, 2, 4, 6, 5, 8, 10] with total path length 24.
+- Centrality outputs are exported as separate CSV files for 16 entities per metric (betweenness, closeness, degree, eigenvector, and PageRank), enabling direct cross-metric ranking.
+- Graph topology evidence is preserved in both script-style construction files and the NodesAndTheirRelations visualization image.
 
 ## Local Setup and Run Steps
 Some setup details are not explicitly defined in this folder; inferred minimal steps are provided.
@@ -37,9 +37,9 @@ Some setup details are not explicitly defined in this folder; inferred minimal s
 - CentralityMeasuresCalculationTask/: Metric CSVs, graph setup scripts, and visualization.
 
 ## Limitations and Future Improvements
-- Automated pipeline orchestration is not packaged as a single script.
-- Naming consistency can be improved across files.
-- A single summary report of all metrics and comparisons would improve readability.
+- The workflow is split across multiple TXT scripts and CSV exports, so reproducibility depends on manual execution order rather than a single orchestrated pipeline.
+- Analysis is snapshot-based on one fixed graph instance; temporal dynamics, weighted-edge uncertainty, and sensitivity checks are not part of the current outputs.
+- Naming and artifact consistency issues (for example, mixed spellings and separate metric files) should be standardized into one comparative report/table for easier interpretation.
 
 ## Source Evidence Used
 - GraphAndAICA01_Dijkastra_Assignment.ipynb

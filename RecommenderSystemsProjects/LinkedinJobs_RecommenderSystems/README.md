@@ -19,8 +19,9 @@ Users need relevant job recommendations aligned with their profiles and preferen
 - Recommender systems techniques used in notebook
 
 ## Results and Outputs
-- Notebook outputs provide recommendation workflow evidence.
-- Presentation and report artifacts provide interpretation and communication structure.
+- The notebook includes Top-10 evaluation over 200 random queries with reported proxy precision/title-match rate 0.585 +/- 0.324, intra-list diversity 0.550 +/- 0.270, and catalogue coverage 100% (50,000/50,000 items queryable).
+- Ranking quality analysis sections in the notebook explicitly discuss NDCG/MAP framing and system-level trade-offs between relevance and diversity.
+- Presentation/report artifacts document dataset scale and implementation framing used for the CA1 recommender deliverable.
 
 ## Local Setup and Run Steps
 Some setup details are not explicitly defined in this folder; inferred minimal steps are provided.
@@ -36,9 +37,9 @@ Some setup details are not explicitly defined in this folder; inferred minimal s
 - Recommender Systems Group CA One.pdf: Assignment/report document.
 
 ## Limitations and Future Improvements
-- Dependency and execution environment are not fully specified in this folder.
-- Additional evaluation metrics and baseline comparisons would improve rigor.
-- A deployable recommendation API can be added in future versions.
+- Slide deck limitations explicitly call out cold-start behavior for new users/new jobs and reduced recommendation quality when profile/content signals are sparse.
+- The current approach is primarily content-driven; future work in slides recommends adding collaborative filtering from user interaction logs (click/apply signals).
+- Additional future direction in slides includes richer semantic encoders (for example BERT-based text representations) and stronger online feedback loops.
 
 ## Source Evidence Used
 - LinkedIn_Jobs_Recommender_System_CA1.ipynb

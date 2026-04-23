@@ -20,8 +20,9 @@ Job-seekers and analysts need structured insights from large volumes of job post
 - Web scraping and data analysis libraries used in notebook
 
 ## Results and Outputs
-- Notebook outputs provide extracted records, transformations, and analysis visuals.
-- Report and presentation files summarize project outcomes and storytelling.
+- The notebook run logs show a completed scrape and persistence flow: 19 jobs scraped, feature extraction completed for 19 jobs, and 19 rows inserted into the jobs table.
+- Outputs include structured job records and downstream analysis-ready fields, documented in the notebook and report narrative.
+- The presentation/report pair provides implementation-level evidence for scraping workflow, parsing strategy, and practical operational constraints.
 
 ## Local Setup and Run Steps
 Some setup details are not explicitly defined in this folder; inferred minimal steps are provided.
@@ -37,9 +38,9 @@ Some setup details are not explicitly defined in this folder; inferred minimal s
 - Sample problems.txt: Problem prompts and scope notes.
 
 ## Limitations and Future Improvements
-- Scraping reliability can vary with source website changes.
-- Reproducibility can be improved with pinned dependencies and reusable data pipelines.
-- Periodic data refresh automation can improve longitudinal analysis.
+- Report and slide material explicitly identify LinkedIn rate limiting and anti-bot thresholds as a current failure mode for longer scraping runs.
+- HTML structure changes are a recurring maintenance risk; the project notes fallback parsing logic as necessary hardening work.
+- Future improvement direction includes production-grade throttling/backoff, stronger session persistence/caching, and scheduled ingestion for trend monitoring.
 
 ## Source Evidence Used
 - LinkedinJobsWebscrapper_CA02_BhargavaKoya_20075511.ipynb

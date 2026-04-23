@@ -19,8 +19,9 @@ The challenge is to learn an effective navigation policy for taxi movement in a 
 - Reinforcement learning methods implemented in notebook
 
 ## Results and Outputs
-- RL training and evaluation outputs are available in notebook cells.
-- Report document provides additional narrative and interpretation.
+- Notebook logs report 5,000-episode training for both Q-Learning and Monte Carlo, with checkpointed success-rate traces (for example, both approaches reach ~100% around later checkpoints under tuned settings).
+- Output cells include comparative runs under parameter changes (for example epsilon decay and alpha variants), making convergence behavior directly inspectable.
+- The report complements notebook outputs with assignment-level interpretation of policy-learning behavior in the taxi-grid environment.
 
 ## Local Setup and Run Steps
 Some setup details are not explicitly defined in this folder; inferred minimal steps are provided.
@@ -35,9 +36,9 @@ Some setup details are not explicitly defined in this folder; inferred minimal s
 - report.pdf: Project report.
 
 ## Limitations and Future Improvements
-- No explicit dependency manifest is included.
-- Additional policy comparisons and environment variants would improve evaluation depth.
-- Reproducibility can improve with deterministic configuration and pinned dependencies.
+- Current results are tied to the single Taxi-grid setup and fixed reward structure; transferability to larger or stochastic environments is not validated in this folder.
+- The notebook demonstrates strong convergence but limited baseline diversity (tabular Q-Learning vs Monte Carlo only), so broader algorithmic comparison remains open.
+- Future work should include policy generalization tests, richer environment variants, and reproducibility controls (seed management + pinned dependency/runtime metadata).
 
 ## Source Evidence Used
 - RL_Assignment.ipynb

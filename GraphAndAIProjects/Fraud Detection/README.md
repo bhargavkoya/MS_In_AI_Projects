@@ -21,9 +21,9 @@ Fraud often emerges through network behavior rather than isolated records. The o
 - Cypher query workflows for graph analytics
 
 ## Results and Outputs
-- Feature outputs include customer embeddings and engineered fraud-risk attributes.
-- Query scripts capture analytical logic for reciprocity, communities, circular patterns, centrality, and profitability scoring.
-- Report and presentation files summarize findings.
+- The project works on a graph dataset of 500 customers and 65,010 transactions across a 91-day window (Jul-Oct 2021), as documented in the presentation.
+- The generated feature artifact `customer_features_with_embeddings.csv` contains 500 rows x 20 columns, including graph signals such as pagerank_score, betweenness_score, degree features, and community_id.
+- Report/presentation conclusions explicitly state that the graph-enhanced approach outperforms the transaction-only baseline across precision, recall, F1-score, and ROC-AUC.
 
 ## Local Setup and Run Steps
 Some setup details are not explicitly defined in this folder; inferred minimal steps are provided.
@@ -40,9 +40,9 @@ Some setup details are not explicitly defined in this folder; inferred minimal s
 - Fraud Risk & Profitability Analysis.pptx: Presentation.
 
 ## Limitations and Future Improvements
-- Environment provisioning for graph database execution is not fully specified here.
-- A reproducible end-to-end runner script would improve usability.
-- Validation with larger or external datasets would strengthen robustness.
+- Execution depends on a configured Neo4j/GDS environment and ordered Cypher workflow execution; this deployment dependency is not packaged as a one-command pipeline.
+- Current analysis is bounded to one historical period and one customer graph; broader validation on additional time windows and institutions is needed before operational rollout.
+- The report/presentation future-work direction includes dashboard refresh cycles with updated risk scores, suggesting a move from one-off analysis to periodic model monitoring.
 
 ## Source Evidence Used
 - Fraud risk profitability code/python/fraud_risk_analysis.py
