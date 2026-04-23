@@ -32,6 +32,25 @@ This repository contains 10+ industry-focused projects spanning multiple AI/ML d
 
 ## Projects
 
+## Project README Index
+
+| Domain | Project | Project README |
+|---|---|---|
+| Deep Learning | Crop Disease Detection | [DeepLearningProjects/CA01_CropDiseaseDetection_DL/README.md](DeepLearningProjects/CA01_CropDiseaseDetection_DL/README.md) |
+| Deep Learning | Online Stock Forecasting | [DeepLearningProjects/CA02_OnlineStockForecasting/README.md](DeepLearningProjects/CA02_OnlineStockForecasting/README.md) |
+| Graph and AI | Centrality Measures Calculation Tasks | [GraphAndAIProjects/CentralityMeasuresCalculationTasks/README.md](GraphAndAIProjects/CentralityMeasuresCalculationTasks/README.md) |
+| Graph and AI | Fraud Detection and Profitability Analysis | [GraphAndAIProjects/Fraud%20Detection/README.md](GraphAndAIProjects/Fraud%20Detection/README.md) |
+| Data Analysis | LinkedIn Jobs Scraper and Data Analysis | [LinkedinJobsScraper_DataAnalysis/README.md](LinkedinJobsScraper_DataAnalysis/README.md) |
+| Machine Learning | Client Subscription Classifier | [ML%20Projects/ClientSubscriptionClassifier/README.md](ML%20Projects/ClientSubscriptionClassifier/README.md) |
+| Machine Learning | Energy Consumption Predictor | [ML%20Projects/EnergyConsumptionPredictor/README.md](ML%20Projects/EnergyConsumptionPredictor/README.md) |
+| Natural Language Processing | Blog Gender Classification and Transformer Analysis | [NLP%20Projects/CA01_BlogGenderClassification_And_TransformerPaperAnalysis/README.md](NLP%20Projects/CA01_BlogGenderClassification_And_TransformerPaperAnalysis/README.md) |
+| Natural Language Processing | University RAG Chatbot | [NLP%20Projects/CA02_UniversityRAGChatbot/README.md](NLP%20Projects/CA02_UniversityRAGChatbot/README.md) |
+| Recommender Systems | GAT and LLM Movie Recommender | [RecommenderSystemsProjects/GAT_LLM_Based_MovieRecommenderSystem/README.md](RecommenderSystemsProjects/GAT_LLM_Based_MovieRecommenderSystem/README.md) |
+| Recommender Systems | LinkedIn Jobs Recommender System | [RecommenderSystemsProjects/LinkedinJobs_RecommenderSystems/README.md](RecommenderSystemsProjects/LinkedinJobs_RecommenderSystems/README.md) |
+| Reinforcement Learning | Taxi Grid Navigation System Prototype | [ReinforcementLearningProjects/TaxiGridNavigationSystem_Prototype/README.md](ReinforcementLearningProjects/TaxiGridNavigationSystem_Prototype/README.md) |
+| Reinforcement Learning | Taxi Grid Navigation System Using RL | [ReinforcementLearningProjects/TaxiGridNavigationSystem_Using_RL/README.md](ReinforcementLearningProjects/TaxiGridNavigationSystem_Using_RL/README.md) |
+| Research Methods | Research Methods Artifacts | [ResearchMethods/README.md](ResearchMethods/README.md) |
+
 ### Deep Learning
 
 **Crop Disease Detection**  
